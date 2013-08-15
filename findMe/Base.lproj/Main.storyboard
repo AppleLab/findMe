@@ -232,16 +232,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZr-ey-fVs">
-                                <rect key="frame" x="173" y="228" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="настройки">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd4-8X-Q8Y">
-                                <rect key="frame" x="55" y="228" width="98" height="30"/>
+                                <rect key="frame" x="100" y="234" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="информация">
@@ -556,7 +548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aic-wY-H2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1318" y="634"/>
+            <point key="canvasLocation" x="1578" y="714"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="EKH-sv-cJr">
@@ -582,6 +574,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Gzv-Lj-gSg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnv-ER-OuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FMV-VD-nwy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kHI-WP-kqw">
@@ -593,7 +586,6 @@
                         <segue destination="4iy-EG-XXg" kind="relationship" relationship="rootViewController" id="VDc-dv-kdc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fnv-ER-OuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="261" y="-120"/>
         </scene>
@@ -623,8 +615,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="CrG-fd-HVw"/>
         <segue reference="emV-je-5Dp"/>
-        <segue reference="Hop-IL-XT6"/>
         <segue reference="mPM-p0-cJq"/>
     </inferredMetricsTieBreakers>
 </document>
