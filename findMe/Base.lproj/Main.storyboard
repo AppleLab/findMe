@@ -239,9 +239,6 @@
                                 <state key="normal" title="настройки">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="YCF-Qw-irY" kind="push" id="gYd-va-vLR"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd4-8X-Q8Y">
                                 <rect key="frame" x="55" y="228" width="98" height="30"/>
@@ -470,7 +467,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cVU-ZD-sHN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WRt-BS-kib">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -498,10 +495,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9q-fh-qYQ">
-                                <rect key="frame" x="137" y="79" width="46" height="30"/>
+                                <rect key="frame" x="20" y="81" width="129" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Добавить метку">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -533,34 +530,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etU-Ae-UYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4712" y="-341"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dFN-xb-V3k">
-            <objects>
-                <viewController id="YCF-Qw-irY" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fHt-pn-Eyb"/>
-                        <viewControllerLayoutGuide type="bottom" id="kkg-xo-Eku"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Rjx-AQ-XcZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="настройки" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wq-BC-GSz">
-                                <rect key="frame" x="89" y="41" width="118" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="vpY-Ll-EP3"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D42-L4-GP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="686" y="634"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2pt-rW-mOL">
@@ -604,31 +573,11 @@
                         <segue destination="CEk-hm-4kT" kind="relationship" relationship="viewControllers" id="mPM-p0-cJq"/>
                         <segue destination="dIr-Ne-Mcl" kind="relationship" relationship="viewControllers" id="E2c-EB-TQl"/>
                         <segue destination="2PP-Rz-DXf" kind="relationship" relationship="viewControllers" id="Jzy-z0-y30"/>
-                        <segue destination="1bb-vB-3q6" kind="relationship" relationship="viewControllers" id="NNa-tq-rh9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s3t-4o-nMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3572" y="-1455"/>
-        </scene>
-        <!--View Controller - Общая карта-->
-        <scene sceneID="4ba-k7-YS7">
-            <objects>
-                <viewController id="1bb-vB-3q6" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MBc-eF-1yX"/>
-                        <viewControllerLayoutGuide type="bottom" id="gcs-FC-8YH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XFa-ry-4TE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Общая карта" id="G5U-TN-q78"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3EQ-Bm-ces" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4716" y="-1898"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gzv-Lj-gSg">
@@ -676,6 +625,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="emV-je-5Dp"/>
         <segue reference="Hop-IL-XT6"/>
-        <segue reference="wmN-91-dnE"/>
+        <segue reference="mPM-p0-cJq"/>
     </inferredMetricsTieBreakers>
 </document>
