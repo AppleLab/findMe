@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    mkMapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:mkMapView];
 }
 
 - (void)didReceiveMemoryWarning
