@@ -214,101 +214,48 @@
             </objects>
             <point key="canvasLocation" x="-464" y="634"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="LTb-YN-JkU">
+        <!--Table View Controller-->
+        <scene sceneID="ahD-yf-BDi">
             <objects>
-                <viewController id="4iy-EG-XXg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yCf-si-Uzm"/>
-                        <viewControllerLayoutGuide type="bottom" id="Woi-Ah-yhw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ku9-wt-w33">
+                <tableViewController id="eey-ig-gZK" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="49" sectionHeaderHeight="22" sectionFooterHeight="22" id="vuP-FD-ZPI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="главная форма" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2P-RX-SXE">
-                                <rect key="frame" x="100" y="25" width="185" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd4-8X-Q8Y">
-                                <rect key="frame" x="100" y="234" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="информация">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o7W-ff-qsO">
+                            <rect key="frame" x="0.0" y="135" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Добавление пропавшего">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <segue destination="MUd-jV-zhd" kind="push" id="60J-eR-fvC"/>
+                            </connections>
+                        </button>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="49" id="bCI-Sz-dV8">
+                                <rect key="frame" x="0.0" y="86" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="bCI-Sz-dV8" id="Ni7-Fe-l4s">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="48"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Rm9-fZ-KEA" kind="push" id="fVV-I4-DGP"/>
+                                    <segue destination="75H-Iy-GEu" kind="push" id="u0H-Zx-mic"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8B-E7-Lhu">
-                                <rect key="frame" x="69" y="172" width="166" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="список пропавших">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="nN7-NM-byB" kind="push" id="emV-je-5Dp"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="7ID-GW-Orp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ikp-CN-BBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eey-ig-gZK" id="zqg-Q9-BS9"/>
+                            <outlet property="delegate" destination="eey-ig-gZK" id="WZF-eS-Drl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="fFQ-kx-yWR"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDd-0J-2kU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="-120"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="6fu-Ba-S6F">
-            <objects>
-                <viewController id="nN7-NM-byB" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Tmy-S9-WPQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="lo8-fe-emG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3tC-7m-Et5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGM-V9-Uv9">
-                                <rect key="frame" x="29" y="127" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="пропавший">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="75H-Iy-GEu" kind="modal" id="JMK-Df-xH9"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HOu-o5-Qje">
-                        <nil key="title"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="uTF-D5-sby">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7gB-dg-DOw">
-                                <rect key="frame" x="128" y="-6" width="176" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Добавить пропавшего">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="MUd-jV-zhd" kind="push" id="b5k-zN-6u8"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a3d-Tw-nez" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1960" y="-120"/>
+            <point key="canvasLocation" x="1163" y="-580"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZB6-eg-kWf">
@@ -327,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3X-2T-Qhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2669" y="-120"/>
+            <point key="canvasLocation" x="2036" y="-109"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Mm2-kG-T0X">
@@ -342,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16D-gO-yDV">
-                                <rect key="frame" x="20" y="81" width="159" height="226"/>
+                                <rect key="frame" x="20" y="81" width="159" height="190"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Помоги найти!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZ8-0d-KyY">
@@ -352,36 +299,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Фамилия" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayY-D6-y71">
-                                <rect key="frame" x="187" y="101" width="122" height="36"/>
+                                <rect key="frame" x="198" y="81" width="122" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Имя" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgl-ad-7LS">
-                                <rect key="frame" x="187" y="151" width="42" height="21"/>
+                                <rect key="frame" x="198" y="134" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Место пропажи" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="113" translatesAutoresizingMaskIntoConstraints="NO" id="wVw-7I-ah9">
-                                <rect key="frame" x="187" y="180" width="113" height="54"/>
+                                <rect key="frame" x="198" y="163" width="113" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HY-Ct-Nlj">
-                                <rect key="frame" x="12" y="326" width="209" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Информация о пропавшем">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="CEk-hm-4kT" kind="push" id="wmN-91-dnE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhg-6b-7z6">
-                                <rect key="frame" x="20" y="404" width="125" height="30"/>
+                                <rect key="frame" x="164" y="518" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Начать поиск">
@@ -392,7 +328,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9o-Ha-acn">
-                                <rect key="frame" x="20" y="456" width="108" height="30"/>
+                                <rect key="frame" x="20" y="518" width="108" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Я его видел">
@@ -402,17 +338,14 @@
                                     <segue destination="KAp-k2-hdh" kind="push" id="uyt-fS-RD5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnn-qH-ZM8">
-                                <rect key="frame" x="20" y="517" width="142" height="39"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJF-hR-mWH">
+                                <rect key="frame" x="15" y="292" width="265" height="218"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Список пропавших">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="nN7-NM-byB" kind="push" id="V98-zf-eCu"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -449,26 +382,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aR-Rb-kWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3246" y="-341"/>
-        </scene>
-        <!--View Controller - Информация-->
-        <scene sceneID="Qhh-ag-Ztv">
-            <objects>
-                <viewController id="CEk-hm-4kT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qrL-ry-Bgr"/>
-                        <viewControllerLayoutGuide type="bottom" id="cVU-ZD-sHN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WRt-BS-kib">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Информация" id="Fpf-8Q-JTG"/>
-                    <navigationItem key="navigationItem" id="vQW-96-R9E"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G8l-EV-Vn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4124" y="-341"/>
         </scene>
         <!--View Controller - Моя карта-->
         <scene sceneID="BXm-xT-Xhd">
@@ -523,33 +436,6 @@
             </objects>
             <point key="canvasLocation" x="4712" y="-341"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="2pt-rW-mOL">
-            <objects>
-                <viewController id="Rm9-fZ-KEA" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GCv-5c-J6j"/>
-                        <viewControllerLayoutGuide type="bottom" id="9Wp-yG-QNV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dOB-t1-DFk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="инструкция" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UB8-de-o6a">
-                                <rect key="frame" x="87" y="40" width="118" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="AO4-9Q-lWp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aic-wY-H2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1578" y="714"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="EKH-sv-cJr">
             <objects>
@@ -562,7 +448,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="CEk-hm-4kT" kind="relationship" relationship="viewControllers" id="mPM-p0-cJq"/>
                         <segue destination="dIr-Ne-Mcl" kind="relationship" relationship="viewControllers" id="E2c-EB-TQl"/>
                         <segue destination="2PP-Rz-DXf" kind="relationship" relationship="viewControllers" id="Jzy-z0-y30"/>
                     </connections>
@@ -574,7 +459,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Gzv-Lj-gSg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fnv-ER-OuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FMV-VD-nwy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kHI-WP-kqw">
@@ -583,11 +467,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="4iy-EG-XXg" kind="relationship" relationship="rootViewController" id="VDc-dv-kdc"/>
+                        <segue destination="eey-ig-gZK" kind="relationship" relationship="rootViewController" id="roD-gM-fjI"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnv-ER-OuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="-120"/>
+            <point key="canvasLocation" x="449" y="-126"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="3ST-Dd-AqU">
@@ -595,6 +480,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="75H-Iy-GEu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="dqw-lP-aC6"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="RDm-RL-oAF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4ta-Sf-zYj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -606,7 +492,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkw-w7-JuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2188" y="-1035"/>
+            <point key="canvasLocation" x="1884" y="-1017"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -615,8 +501,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="CrG-fd-HVw"/>
-        <segue reference="emV-je-5Dp"/>
-        <segue reference="mPM-p0-cJq"/>
+        <segue reference="Hop-IL-XT6"/>
     </inferredMetricsTieBreakers>
 </document>
