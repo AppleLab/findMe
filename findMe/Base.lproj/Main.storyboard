@@ -372,10 +372,10 @@
             </objects>
             <point key="canvasLocation" x="3772" y="-341"/>
         </scene>
-        <!--View Controller - Моя карта-->
+        <!--Map View Controller - Моя карта-->
         <scene sceneID="BXm-xT-Xhd">
             <objects>
-                <viewController id="2PP-Rz-DXf" sceneMemberID="viewController">
+                <viewController id="2PP-Rz-DXf" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HxS-Tx-BZB"/>
                         <viewControllerLayoutGuide type="bottom" id="SP8-iI-NPq"/>
@@ -400,10 +400,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Моя карта" id="NNY-D6-Yvy"/>
+                    <connections>
+                        <outlet property="map" destination="dSi-Q7-fs9" id="vmj-Wm-5ZX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJ2-MZ-JtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4716" y="-1128"/>
+            <point key="canvasLocation" x="4648" y="-1170"/>
         </scene>
         <!--View Controller - Комментарии-->
         <scene sceneID="WRb-vo-Lh5">
