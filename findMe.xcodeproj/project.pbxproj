@@ -26,6 +26,7 @@
 		CE837DB217BE0EB90048AE38 /* Без имени-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE837DAF17BE09020048AE38 /* Без имени-2.png */; };
 		CE837DC117BE354F0048AE38 /* Button3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE837DBD17BE354F0048AE38 /* Button3.png */; };
 		CE8FEE0F17BD119A00C8F296 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8FEE0E17BD119A00C8F296 /* CoreLocation.framework */; };
+		CEA0BC7117BE13540002F1CB /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0BC7017BE13540002F1CB /* SearchTableViewController.m */; };
 		CEB9553417BB735200840EF0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9553317BB735200840EF0 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		CE837DAF17BE09020048AE38 /* Без имени-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Без имени-2.png"; path = "../../../../../Volumes/LINK/Без имени-2.png"; sourceTree = "<group>"; };
 		CE837DBD17BE354F0048AE38 /* Button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button3.png; path = ../../../../../Volumes/LINK/Button3.png; sourceTree = "<group>"; };
 		CE8FEE0E17BD119A00C8F296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CEA0BC6F17BE13540002F1CB /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		CEA0BC7017BE13540002F1CB /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 		CEB9553317BB735200840EF0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -190,6 +193,8 @@
 				C5F7B89317B9E9B100FB6223 /* ViewController.m */,
 				CE183A3417BD8208000B4D4B /* MapViewController.h */,
 				CE183A3517BD8208000B4D4B /* MapViewController.m */,
+				CEA0BC6F17BE13540002F1CB /* SearchTableViewController.h */,
+				CEA0BC7017BE13540002F1CB /* SearchTableViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				C5F7B89417B9E9B100FB6223 /* ViewController.m in Sources */,
 				C5F7B88E17B9E9B100FB6223 /* AppDelegate.m in Sources */,
 				C5F7B88A17B9E9B100FB6223 /* main.m in Sources */,
+				CEA0BC7117BE13540002F1CB /* SearchTableViewController.m in Sources */,
 				CE183A3617BD8208000B4D4B /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

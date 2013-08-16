@@ -214,7 +214,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FMV-VD-nwy" kind="modal" modalTransitionStyle="flipHorizontal" id="CrG-fd-HVw"/>
+                                    <segue destination="vaU-12-Fvc" kind="modal" id="Uaw-aI-bVH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -395,10 +395,10 @@
             </objects>
             <point key="canvasLocation" x="2474" y="634"/>
         </scene>
-        <!--View Controller - Моя карта-->
+        <!--Map View Controller - Моя карта-->
         <scene sceneID="BXm-xT-Xhd">
             <objects>
-                <viewController id="2PP-Rz-DXf" sceneMemberID="viewController">
+                <viewController id="2PP-Rz-DXf" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HxS-Tx-BZB"/>
                         <viewControllerLayoutGuide type="bottom" id="SP8-iI-NPq"/>
@@ -423,6 +423,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Моя карта" id="NNY-D6-Yvy"/>
+                    <connections>
+                        <outlet property="map" destination="dSi-Q7-fs9" id="vmj-Wm-5ZX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJ2-MZ-JtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

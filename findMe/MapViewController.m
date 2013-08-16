@@ -14,19 +14,29 @@
 
 @implementation MapViewController
 
+@synthesize map;
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    self.map = nil;
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
+    map.showsUserLocation = YES;
+    [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    mkMapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:mkMapView];
+    map = [[MKMapView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:map];
 }
 
 @end
