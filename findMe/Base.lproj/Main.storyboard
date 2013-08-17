@@ -75,6 +75,13 @@
             <point key="canvasLocation" x="1388" y="-464"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button3.png" width="130" height="50"/>
+        <image name="back.png" width="205" height="182"/>
+        <image name="logo1.png" width="175" height="177"/>
+        <image name="Без имени-2.png" width="320" height="505"/>
+    </resources>
+    <color key="tintColor" red="0.270588249" green="0.2117647231" blue="0.15294118230000001" alpha="1" colorSpace="deviceRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
