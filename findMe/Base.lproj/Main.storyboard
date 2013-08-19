@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Без имени-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="pvf-zN-dXg">
-                                <rect key="frame" x="-4" y="53" width="328" height="515"/>
+                                <rect key="frame" x="-8" y="53" width="328" height="515"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96078437569999997" green="0.91372555489999996" blue="0.85490202900000001" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
@@ -87,6 +87,10 @@
                         </accessibility>
                     </view>
                     <navigationItem key="navigationItem" id="cQ0-nG-dTS"/>
+                    <connections>
+                        <outlet property="loginTextfield" destination="stS-en-04U" id="G7Y-kA-g75"/>
+                        <outlet property="passwordTextfield" destination="mV2-3W-KYG" id="3wS-Gr-lU5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,7 +129,6 @@
         <!--Search Table View Controller-->
         <scene sceneID="hPG-dj-YAB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1b1-kw-qux" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="LOL" id="v5E-X6-pbv" customClass="SearchTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" indicatorStyle="black" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" sectionIndexMinimumDisplayRowCount="2" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="f7U-7m-24u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -159,6 +162,7 @@
                         <barButtonItem key="backBarButtonItem" title="Назад" id="QfZ-X3-zAO"/>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1b1-kw-qux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4228" y="-302"/>
         </scene>
@@ -336,7 +340,7 @@
         <!--View Controller-->
         <scene sceneID="Lk4-pW-h63">
             <objects>
-                <viewController id="fw1-HS-Moo" sceneMemberID="viewController">
+                <viewController id="fw1-HS-Moo" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hcb-VN-ufq"/>
                         <viewControllerLayoutGuide type="bottom" id="vyZ-l9-Xqy"/>
@@ -405,6 +409,9 @@
                     <navigationItem key="navigationItem" id="0Up-Kc-5Az">
                         <barButtonItem key="backBarButtonItem" title="Назад" image="Button3.png" id="4Bm-j6-dpe"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="MarksTextfield" destination="tdI-f5-KJW" id="mhL-WW-iSq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qS1-HK-MZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

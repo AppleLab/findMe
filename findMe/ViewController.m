@@ -26,8 +26,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    mkMapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:mkMapView];
+   
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [self.loginTextfield resignFirstResponder];
+    [self.passwordTextfield resignFirstResponder];
+    [self.marksTextfield resignFirstResponder];
+  
 }
 
 @end
