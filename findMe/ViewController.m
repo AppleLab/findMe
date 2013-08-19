@@ -34,6 +34,7 @@
     [self.loginTextfield resignFirstResponder];
     [self.passwordTextfield resignFirstResponder];
     [self.marksTextfield resignFirstResponder];
+    [self.describeTextField resignFirstResponder];
   
 }
 
