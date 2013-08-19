@@ -25,6 +25,12 @@
 
 - (void)viewDidLoad
 {
+    //self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"back.png"]];
+    
+    
+   UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back_1.png"]];
+    self.tableView.backgroundView = imageView;
+    self.tableView.backgroundColor = [UIColor colorWithRed:245/256.0 green:233/256.0 blue:218/256.0 alpha:1.0];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
