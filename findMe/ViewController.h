@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-@interface ViewController : UIViewController {
-    MKMapView *mkMapView;
-}
+@interface ViewController : UIViewController
+
+- (IBAction)authVkButton:(id)sender;
 
 @end

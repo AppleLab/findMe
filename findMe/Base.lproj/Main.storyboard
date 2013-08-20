@@ -55,7 +55,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YQu-4V-jef" kind="modal" id="YOx-R9-ugv"/>
+                                    <segue destination="YQu-4V-jef" kind="modal" identifier="logIn" id="YOx-R9-ugv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="830-Fy-ohg">
@@ -69,7 +69,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4fa-e4-YrW" kind="modal" id="IzY-mn-lYP"/>
+                                    <action selector="authVkButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GaJ-jZ-s6n"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo1.png" translatesAutoresizingMaskIntoConstraints="NO" id="rTN-PW-F4D">
@@ -88,7 +88,7 @@
         <!--Kontakte View Controller-->
         <scene sceneID="dKN-nb-qHv">
             <objects>
-                <viewController id="4fa-e4-YrW" customClass="VKontakteViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="webViewVK" id="4fa-e4-YrW" customClass="VKontakteViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hep-b7-D5I"/>
                         <viewControllerLayoutGuide type="bottom" id="Yah-Nc-tk5"/>
@@ -108,7 +108,6 @@
                     <navigationItem key="navigationItem" id="JyV-Jr-w26"/>
                     <connections>
                         <outlet property="web" destination="Xu1-NL-ryH" id="exN-K5-ZlR"/>
-                        <segue destination="YQu-4V-jef" kind="modal" id="pbb-3A-z6c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mC4-T3-AKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -491,7 +490,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="pbb-3A-z6c"/>
-    </inferredMetricsTieBreakers>
 </document>

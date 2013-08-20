@@ -12,9 +12,6 @@
 
 @interface VKontakteViewController : UIViewController <UIWebViewDelegate>
 {
- //   UIWebView *web;
-//    NSInteger offset;
- //   NSString *access_token;
       UIStoryboard *Storyboard;
 }
 

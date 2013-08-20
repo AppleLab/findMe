@@ -19,6 +19,7 @@
     [super viewDidLoad];
    
 	// Do any additional setup after loading the view, typically from a nib.
+   
     
 }
 
@@ -26,8 +27,24 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    mkMapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:mkMapView];
+   
 }
 
+- (IBAction)authVkButton:(id)sender {
+    
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"]){
+        
+        [self performSegueWithIdentifier:@"logIn" sender:self];
+        
+    }
+    else{
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"webViewVK"];
+        [self presentViewController:yourViewController animated:YES completion:nil];
+
+        
+    }
+    
+}
 @end
