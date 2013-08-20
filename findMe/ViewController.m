@@ -45,6 +45,16 @@
 
         
     }
-    
 }
+
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+        
+        [self.loginTextfield resignFirstResponder];
+        [self.passwordTextfield resignFirstResponder];
+        [self.marksTextfield resignFirstResponder];
+        [self.describeTextField resignFirstResponder];
+        
+    }
+
 @end
