@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *marksTextfield;
 @property (weak, nonatomic) IBOutlet UITextView *describeTextField;
 
+- (IBAction)authVkButton:(id)sender;
 
 
 @end
