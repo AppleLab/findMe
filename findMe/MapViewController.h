@@ -12,8 +12,12 @@
 #import <MapKit/MapKit.h>
 @interface MapViewController : UIViewController {
     MKMapView *mkMapView;
+    CLLocationManager *locationManager;
 }
 @property (weak, nonatomic) IBOutlet MKMapView *map;
+@property (nonatomic, retain) CLLocationManager *locationManager;
+- (IBAction)location:(id)sender;
+
 
 @end
 

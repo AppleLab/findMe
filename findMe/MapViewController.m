@@ -28,6 +28,13 @@
     [super viewDidLoad];
     map.showsUserLocation = YES;
     [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+    CLLocationCoordinate2D coordinate = [self getLocation];
+    MKCoordinateRegion mylocation = { {0.0, 0.0} , {0.0, 0.0} };
+    mylocation.center.latitude = coordinate.latitude;
+    mylocation.center.longitude = coordinate.longitude;
+    mylocation.span.longitudeDelta = 0.02f;
+    mylocation.span.latitudeDelta = 0.02f;
+    [map setRegion:mylocation animated:YES];
 
 }
 
@@ -38,8 +45,26 @@
     map = [[MKMapView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:map];
 }
--(IBAction)getlocation {
-    map.showsUserLocation = YES;
-    [map setCenterCoordinate:map.userLocation.coordinate animated:YES];
+-(CLLocationCoordinate2D) getLocation{
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    [locationManager startUpdatingLocation];
+    CLLocation *location = [locationManager location];
+    CLLocationCoordinate2D coordinate = [location coordinate];
+    
+    return coordinate;
+}
+
+- (IBAction)location:(id)sender {
+
+    CLLocationCoordinate2D coordinate = [self getLocation];
+    MKCoordinateRegion mylocation = { {0.0, 0.0} , {0.0, 0.0} };
+    mylocation.center.latitude = coordinate.latitude;
+    mylocation.center.longitude = coordinate.longitude;
+    mylocation.span.longitudeDelta = 0.02f;
+    mylocation.span.latitudeDelta = 0.02f;
+    [map setRegion:mylocation animated:YES];
 }
 @end

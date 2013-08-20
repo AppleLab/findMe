@@ -321,6 +321,17 @@
                                     <segue destination="fw1-HS-Moo" kind="push" id="vSF-kX-V9p"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXJ-2h-ldW">
+                                <rect key="frame" x="9" y="73" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="location:" destination="2PP-Rz-DXf" eventType="touchUpInside" id="5co-EQ-aYy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078437569999997" green="0.91372555489999996" blue="0.85490202900000001" alpha="1" colorSpace="deviceRGB"/>
                         <color key="tintColor" red="0.270588249" green="0.2117647231" blue="0.15294118230000001" alpha="1" colorSpace="deviceRGB"/>
