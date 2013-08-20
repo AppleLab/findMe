@@ -38,5 +38,8 @@
     map = [[MKMapView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:map];
 }
-
+-(IBAction)getlocation {
+    map.showsUserLocation = YES;
+    [map setCenterCoordinate:map.userLocation.coordinate animated:YES];
+}
 @end
