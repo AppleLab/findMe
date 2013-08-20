@@ -72,5 +72,8 @@
     // Dispose of any resources that can be recreated.
   
 }
-
+-(IBAction)getlocation {
+    map.showsUserLocation = YES;
+    [map setCenterCoordinate:map.userLocation.coordinate animated:YES];
+}
 @end
