@@ -15,7 +15,7 @@
     CLLocationManager *locationManager;
 }
 @property (weak, nonatomic) IBOutlet MKMapView *map;
-@property (nonatomic, retain) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 - (IBAction)location:(id)sender;
 
 
