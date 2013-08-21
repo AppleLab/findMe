@@ -26,7 +26,6 @@
 		CE239FA517BE5D6F00C5256A /* Без имени-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE239FA317BE480100C5256A /* Без имени-2.png */; };
 		CE3B984817BDF76100E6E1D1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3B984717BDF76100E6E1D1 /* CoreData.framework */; };
 		CE464AAB17C20BFC00466E55 /* MapTrackingAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464AAA17C20BFC00466E55 /* MapTrackingAnnotation.m */; };
-		CE5763B817C3BF1B00F63CB8 /* MapNoteAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5763B717C3BF1B00F63CB8 /* MapNoteAnnotation.m */; };
 		CE8FEE0F17BD119A00C8F296 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8FEE0E17BD119A00C8F296 /* CoreLocation.framework */; };
 		CEA0BC7117BE13540002F1CB /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0BC7017BE13540002F1CB /* SearchTableViewController.m */; };
 		CEAB561F17BFDA1E00CD5325 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAB561D17BFDA1E00CD5325 /* back.png */; };
@@ -90,8 +89,6 @@
 		CE3B984717BDF76100E6E1D1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CE464AA917C20BFC00466E55 /* MapTrackingAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTrackingAnnotation.h; sourceTree = "<group>"; };
 		CE464AAA17C20BFC00466E55 /* MapTrackingAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTrackingAnnotation.m; sourceTree = "<group>"; };
-		CE5763B617C3BF1000F63CB8 /* MapNoteAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MapNoteAnnotation.h; path = "../../../Downloads/MapNotes-master/MapNotes/MapNoteAnnotation.h"; sourceTree = "<group>"; };
-		CE5763B717C3BF1B00F63CB8 /* MapNoteAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapNoteAnnotation.m; path = "../../../Downloads/MapNotes-master/MapNotes/MapNoteAnnotation.m"; sourceTree = "<group>"; };
 		CE8FEE0E17BD119A00C8F296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CEA0BC6F17BE13540002F1CB /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
 		CEA0BC7017BE13540002F1CB /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
@@ -103,6 +100,8 @@
 		CEE4CB8417C4C05C0078C950 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
 		CEE4CB8617C4C4E60078C950 /* NoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoLogo.png; sourceTree = "<group>"; };
 		CEE4CB8817C4C8240078C950 /* NoLogo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoLogo_2.png; sourceTree = "<group>"; };
+		CEE4CB8A17C4CA5F0078C950 /* MapNoteAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapNoteAnnotation.h; sourceTree = "<group>"; };
+		CEE4CB8B17C4CA5F0078C950 /* MapNoteAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapNoteAnnotation.m; sourceTree = "<group>"; };
 		CEF5FCCE17BF69C200AD3643 /* APIDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIDownload.h; sourceTree = "<group>"; };
 		CEF5FCCF17BF69C200AD3643 /* APIDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIDownload.m; sourceTree = "<group>"; };
 		CEF5FCD217BF69D400AD3643 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
@@ -249,8 +248,8 @@
 		C5F7B8B517B9E9E400FB6223 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CE5763B617C3BF1000F63CB8 /* MapNoteAnnotation.h */,
-				CE5763B717C3BF1B00F63CB8 /* MapNoteAnnotation.m */,
+				CEE4CB8A17C4CA5F0078C950 /* MapNoteAnnotation.h */,
+				CEE4CB8B17C4CA5F0078C950 /* MapNoteAnnotation.m */,
 				CE464AAC17C20C0100466E55 /* Models */,
 				C5F7B88F17B9E9B100FB6223 /* Main.storyboard */,
 				C5F7B89217B9E9B100FB6223 /* ViewController.h */,
@@ -450,7 +449,6 @@
 				CE464AAB17C20BFC00466E55 /* MapTrackingAnnotation.m in Sources */,
 				CEF5FCEB17BF69D400AD3643 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
 				CEF5FCE717BF69D400AD3643 /* CDataScanner.m in Sources */,
-				CE5763B817C3BF1B00F63CB8 /* MapNoteAnnotation.m in Sources */,
 				CEF5FCE817BF69D400AD3643 /* CDataScanner_Extensions.m in Sources */,
 				CEF5FCEC17BF69D400AD3643 /* CJSONScanner.m in Sources */,
 				CEF5FCEE17BF69D400AD3643 /* CJSONSerializedData.m in Sources */,
