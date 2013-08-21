@@ -352,7 +352,7 @@
                             <accessibilityTraits key="traits" none="YES" button="YES"/>
                         </accessibility>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Карта" id="NNY-D6-Yvy"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Карта" image="103-map.png" id="NNY-D6-Yvy"/>
                     <connections>
                         <outlet property="map" destination="dSi-Q7-fs9" id="AI8-w1-yad"/>
                     </connections>
@@ -461,7 +461,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94901967050000002" green="0.89411771299999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Метки" id="1Oh-4X-7lU"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Метки" image="07-map-marker.png" id="1Oh-4X-7lU"/>
                     <navigationItem key="navigationItem" id="wzg-lP-Hnw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etU-Ae-UYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -517,6 +517,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="07-map-marker.png" width="16" height="26"/>
+        <image name="103-map.png" width="26" height="21"/>
         <image name="Button3.png" width="130" height="50"/>
         <image name="NoLogo_2.png" width="126" height="78.740158081054688"/>
         <image name="back.png" width="205" height="182"/>
