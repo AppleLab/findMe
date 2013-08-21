@@ -317,7 +317,8 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fw1-HS-Moo" kind="push" id="vSF-kX-V9p"/>
+                                    <action selector="pinpin:" destination="2PP-Rz-DXf" eventType="touchUpInside" id="WhZ-WS-WdZ"/>
+                                    <segue destination="fw1-HS-Moo" kind="push" id="1vC-3G-9zR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXJ-2h-ldW">
