@@ -127,4 +127,25 @@
 
  */
 
+- (IBAction)logOut:(id)sender {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults removeObjectForKey:@"access_token"];
+    [userDefaults synchronize];
+    
+//    [self dismissViewControllerAnimated:YES completion:^{
+//        //present another modal view controller here
+//        
+//    }];
+    NSHTTPCookie *cookie;
+    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    for (cookie in [storage cookies]) {
+        [storage deleteCookie:cookie];
+    }
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"MainView"];
+    [self presentViewController:yourViewController animated:YES completion:nil];
+
+}
 @end

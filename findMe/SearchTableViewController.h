@@ -12,6 +12,7 @@
     
     NSArray *people;
 }
+- (IBAction)logOut:(id)sender;
 
 @property(nonatomic, retain) NSArray *people;
 @end
