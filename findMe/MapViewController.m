@@ -55,6 +55,7 @@
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     locationManager.distanceFilter = 0.2;
     locationManager.headingFilter = 5;
+   
     [locationManager startUpdatingHeading];
     [locationManager startUpdatingLocation];
     //[self didToLocation:locationManager.location];
@@ -67,17 +68,19 @@ self.map.userTrackingMode = MKUserTrackingModeFollowWithHeading;
 map.delegate = self;
 
     
-}
-
--(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id < MKOverlay>)overlay
-{
-    MKCircleView *circleView = [[MKCircleView alloc] initWithCircle:(MKCircle *)overlay];
-    circleView.fillColor = [UIColor greenColor];
-    circleView.alpha = 0.4;
-    circleView.strokeColor = [UIColor greenColor];
-    circleView.lineWidth = 1;
+    // Задаются координаты для области поиска
+    CLLocationCoordinate2D commuterLotCoords[4]={
+        CLLocationCoordinate2DMake(41.0037,-104.0556),
+        CLLocationCoordinate2DMake(44.9949,-104.0584),
+        CLLocationCoordinate2DMake(44.9998,-111.0539),
+        CLLocationCoordinate2DMake(41.0037,-104.0556)};
     
-    return circleView;
+    //Вызывается прорисовка границ по координатам
+    MKPolygon *commuterPoly1 = [MKPolygon polygonWithCoordinates:commuterLotCoords count:4];
+    [self.map addOverlay:commuterPoly1];
+    
+
+    
 }
 
 
@@ -96,6 +99,8 @@ map.delegate = self;
 //    MapTrackingAnnotation* pin = [[MapTrackingAnnotation alloc] initWithLocation:currentLocation.coordinate];
 //    [self.map addAnnotation:pin];
 
+    
+    // прорисовка круга-трекера
     MKCircle *circle = [MKCircle circleWithCenterCoordinate:currentLocation.coordinate radius:9];
     [self.map addOverlay:circle];
     
@@ -130,8 +135,29 @@ map.delegate = self;
     mylocation.span.longitudeDelta = 0.02f;
     mylocation.span.latitudeDelta = 0.02f;
     [map setRegion:mylocation animated:YES];
-
+    [map regionThatFits:mylocation];
+   
 }
+
+
+
+-(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id < MKOverlay> )overlay{
+    if([overlay isKindOfClass:[MKPolygon class]]){
+        MKPolygonView *view = [[[MKPolygonView alloc] initWithOverlay:overlay] init];
+        view.lineWidth=20;
+        view.strokeColor=[UIColor blueColor];
+        view.fillColor=[[UIColor blueColor] colorWithAlphaComponent:0.5];
+        return view;
+    }
+    MKCircleView *circleView = [[MKCircleView alloc] initWithCircle:(MKCircle *)overlay];
+        circleView.fillColor = [UIColor greenColor];
+        circleView.alpha = 0.4;
+        circleView.strokeColor = [UIColor greenColor];
+        circleView.lineWidth = 1;
+    
+        return circleView;
+}
+
 
 - (IBAction)location:(id)sender {
     
