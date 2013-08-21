@@ -8,6 +8,7 @@
 
 #import "MapViewController.h"
 #import "MapTrackingAnnotation.h"
+#import "MapNoteAnnotation.h"
 
 
 @interface MapViewController ()
@@ -18,6 +19,8 @@
 
 @synthesize map;
 @synthesize locationManager;
+@synthesize coordinate;
+@synthesize location;
 
 - (void)viewDidUnload
 {
@@ -31,8 +34,13 @@
 {
     [super viewDidLoad];
     map.showsUserLocation = YES;
+    map.userInteractionEnabled = YES;
+    map.userTrackingMode = MKUserTrackingModeFollowWithHeading;
+    map.delegate = self;
+
+
     [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
-    CLLocationCoordinate2D coordinate = [self getLocation];
+    coordinate = [self getLocation];
     MKCoordinateRegion mylocation = { {0.0, 0.0} , {0.0, 0.0} };
     mylocation.center.latitude = coordinate.latitude;
     mylocation.center.longitude = coordinate.longitude;
@@ -45,10 +53,31 @@
     locationManager.delegate = self;
     locationManager.distanceFilter = kCLDistanceFilterNone;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    locationManager.distanceFilter = 10;
+    locationManager.distanceFilter = 0.2;
+    locationManager.headingFilter = 5;
+    [locationManager startUpdatingHeading];
     [locationManager startUpdatingLocation];
     //[self didToLocation:locationManager.location];
     
+    
+    
+    
+
+self.map.userTrackingMode = MKUserTrackingModeFollowWithHeading;
+map.delegate = self;
+
+    
+}
+
+-(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id < MKOverlay>)overlay
+{
+    MKCircleView *circleView = [[MKCircleView alloc] initWithCircle:(MKCircle *)overlay];
+    circleView.fillColor = [UIColor greenColor];
+    circleView.alpha = 0.4;
+    circleView.strokeColor = [UIColor greenColor];
+    circleView.lineWidth = 1;
+    
+    return circleView;
 }
 
 
@@ -58,16 +87,17 @@
     NSLog(@"Location array %@",[locations lastObject]);
     
    CLLocation *currentLocation = [locations lastObject];
-//    userCoordinate.text = [NSString stringWithFormat:
-//                           @"latitude %+.6f,\n longitude %+.6f\n",
-//                           currentLocation.coordinate.latitude,
-//                           currentLocation.coordinate.longitude];
-//    [userCoordinate sizeToFit];
-    
-    MapTrackingAnnotation* pin = [[MapTrackingAnnotation alloc] initWithLocation:currentLocation.coordinate];
-    [self.map addAnnotation:pin];
+////    userCoordinate.text = [NSString stringWithFormat:
+////                           @"latitude %+.6f,\n longitude %+.6f\n",
+////                           currentLocation.coordinate.latitude,
+////                           currentLocation.coordinate.longitude];
+////    [userCoordinate sizeToFit];
+//    
+//    MapTrackingAnnotation* pin = [[MapTrackingAnnotation alloc] initWithLocation:currentLocation.coordinate];
+//    [self.map addAnnotation:pin];
 
-    
+    MKCircle *circle = [MKCircle circleWithCenterCoordinate:currentLocation.coordinate radius:9];
+    [self.map addOverlay:circle];
     
 
 }
@@ -80,25 +110,51 @@
   
 }
 -(CLLocationCoordinate2D) getLocation{
-    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     locationManager.distanceFilter = kCLDistanceFilterNone;
     [locationManager startUpdatingLocation];
-    CLLocation *location = [locationManager location];
-    CLLocationCoordinate2D coordinate = [location coordinate];
+    location = [locationManager location];
+    coordinate = [location coordinate];
     
     return coordinate;
 }
 
-- (IBAction)location:(id)sender {
-
-    CLLocationCoordinate2D coordinate = [self getLocation];
+-(void) coordinatesForNORMMyLocation{
+    
+    coordinate = [self getLocation];
     MKCoordinateRegion mylocation = { {0.0, 0.0} , {0.0, 0.0} };
     mylocation.center.latitude = coordinate.latitude;
     mylocation.center.longitude = coordinate.longitude;
     mylocation.span.longitudeDelta = 0.02f;
     mylocation.span.latitudeDelta = 0.02f;
     [map setRegion:mylocation animated:YES];
+
 }
+
+- (IBAction)location:(id)sender {
+    
+    [self coordinatesForNORMMyLocation];
+
+    }
+
+- (IBAction)pinpin:(id)sender {
+   // MKUserLocation *userLocation;
+   // CLLocation *userLocation = [location lastObject];
+   //     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([self getLocation], coordinate.latitude, coordinate.longitude);
+    //[self.map setRegion:[self.map regionThatFits:region] animated:YES];
+    
+    [self coordinatesForNORMMyLocation];
+    
+    // Add an annotation
+    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+    point.coordinate = coordinate;
+    point.title = @"Where am I?";
+    point.subtitle = @"I'm here!!!";
+    
+    [self.map addAnnotation:point];
+}
+
+
 @end
