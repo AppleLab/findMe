@@ -33,6 +33,9 @@
 		CEB9553417BB735200840EF0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9553317BB735200840EF0 /* MapKit.framework */; };
 		CEE4CB7017C234080078C950 /* back_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE4CB6E17C234080078C950 /* back_1.png */; };
 		CEE4CB7117C234080078C950 /* Button3On.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE4CB6F17C234080078C950 /* Button3On.png */; };
+		CEE4CB8517C4C05C0078C950 /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE4CB8417C4C05C0078C950 /* logo2.png */; };
+		CEE4CB8717C4C4E60078C950 /* NoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE4CB8617C4C4E60078C950 /* NoLogo.png */; };
+		CEE4CB8917C4C8240078C950 /* NoLogo_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE4CB8817C4C8240078C950 /* NoLogo_2.png */; };
 		CEF5FCD017BF69C200AD3643 /* APIDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5FCCF17BF69C200AD3643 /* APIDownload.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CEF5FCE717BF69D400AD3643 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5FCD317BF69D400AD3643 /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CEF5FCE817BF69D400AD3643 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5FCD517BF69D400AD3643 /* CDataScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -94,6 +97,9 @@
 		CEB9553317BB735200840EF0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEE4CB6E17C234080078C950 /* back_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_1.png; sourceTree = "<group>"; };
 		CEE4CB6F17C234080078C950 /* Button3On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button3On.png; sourceTree = "<group>"; };
+		CEE4CB8417C4C05C0078C950 /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+		CEE4CB8617C4C4E60078C950 /* NoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoLogo.png; sourceTree = "<group>"; };
+		CEE4CB8817C4C8240078C950 /* NoLogo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoLogo_2.png; sourceTree = "<group>"; };
 		CEF5FCCE17BF69C200AD3643 /* APIDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIDownload.h; sourceTree = "<group>"; };
 		CEF5FCCF17BF69C200AD3643 /* APIDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIDownload.m; sourceTree = "<group>"; };
 		CEF5FCD217BF69D400AD3643 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
@@ -259,6 +265,9 @@
 			isa = PBXGroup;
 			children = (
 				CE239FA217BE480100C5256A /* Button3.png */,
+				CEE4CB8417C4C05C0078C950 /* logo2.png */,
+				CEE4CB8817C4C8240078C950 /* NoLogo_2.png */,
+				CEE4CB8617C4C4E60078C950 /* NoLogo.png */,
 				CE239FA317BE480100C5256A /* Без имени-2.png */,
 			);
 			name = imiges;
@@ -404,11 +413,14 @@
 			files = (
 				CEE4CB7117C234080078C950 /* Button3On.png in Resources */,
 				C5F7B89617B9E9B100FB6223 /* Images.xcassets in Resources */,
+				CEE4CB8917C4C8240078C950 /* NoLogo_2.png in Resources */,
 				CE239FA417BE5D5400C5256A /* Button3.png in Resources */,
 				CEAB561F17BFDA1E00CD5325 /* back.png in Resources */,
 				CE239FA517BE5D6F00C5256A /* Без имени-2.png in Resources */,
+				CEE4CB8717C4C4E60078C950 /* NoLogo.png in Resources */,
 				C5F7B88817B9E9B100FB6223 /* InfoPlist.strings in Resources */,
 				C5F7B89117B9E9B100FB6223 /* Main.storyboard in Resources */,
+				CEE4CB8517C4C05C0078C950 /* logo2.png in Resources */,
 				CEE4CB7017C234080078C950 /* back_1.png in Resources */,
 				CEAB562017BFDA1E00CD5325 /* logo1.png in Resources */,
 			);
