@@ -17,7 +17,7 @@
     CLLocationCoordinate2D coordinate;
     NSString *title;
     NSString *subtitle;
-
+    
 }
 @property (weak, nonatomic) IBOutlet MKMapView *map;
 @property (strong, nonatomic) CLLocationManager *locationManager;
