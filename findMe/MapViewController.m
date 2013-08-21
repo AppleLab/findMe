@@ -69,13 +69,24 @@ map.delegate = self;
     
 }
 
+-(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id < MKOverlay>)overlay
+{
+    MKCircleView *circleView = [[MKCircleView alloc] initWithCircle:(MKCircle *)overlay];
+    circleView.fillColor = [UIColor greenColor];
+    circleView.alpha = 0.4;
+    circleView.strokeColor = [UIColor greenColor];
+    circleView.lineWidth = 1;
+    
+    return circleView;
+}
 
-//-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
-//    
-//  
-//    NSLog(@"Location array %@",[locations lastObject]);
-//    
-//   CLLocation *currentLocation = [locations lastObject];
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+    
+  
+    NSLog(@"Location array %@",[locations lastObject]);
+    
+   CLLocation *currentLocation = [locations lastObject];
 ////    userCoordinate.text = [NSString stringWithFormat:
 ////                           @"latitude %+.6f,\n longitude %+.6f\n",
 ////                           currentLocation.coordinate.latitude,
@@ -89,7 +100,7 @@ map.delegate = self;
     [self.map addOverlay:circle];
     
 
-//}
+}
 
 
 - (void)didReceiveMemoryWarning
