@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainView" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BAf-hY-fE1"/>
                         <viewControllerLayoutGuide type="bottom" id="lin-pK-bbK"/>
@@ -159,6 +159,19 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="amB-kR-Q2L">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="QfZ-X3-zAO"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="x9m-C9-bOV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KhJ-OY-kf5">
+                                <rect key="frame" x="217" y="5" width="87" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Выйти из vk">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="v5E-X6-pbv" eventType="touchUpInside" id="wnz-fI-QFW"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1b1-kw-qux" userLabel="First Responder" sceneMemberID="firstResponder"/>
