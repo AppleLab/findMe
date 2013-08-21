@@ -56,23 +56,23 @@
 
 
 //-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
-//   
+//    
 //  
 //    NSLog(@"Location array %@",[locations lastObject]);
-//
+//    
 //   CLLocation *currentLocation = [locations lastObject];
-//////    userCoordinate.text = [NSString stringWithFormat:
-//////                           @"latitude %+.6f,\n longitude %+.6f\n",
-//////                           currentLocation.coordinate.latitude,
-//////                           currentLocation.coordinate.longitude];
-//////    [userCoordinate sizeToFit];
+////    userCoordinate.text = [NSString stringWithFormat:
+////                           @"latitude %+.6f,\n longitude %+.6f\n",
+////                           currentLocation.coordinate.latitude,
+////                           currentLocation.coordinate.longitude];
+////    [userCoordinate sizeToFit];
 //    
 //    MapTrackingAnnotation* pin = [[MapTrackingAnnotation alloc] initWithLocation:currentLocation.coordinate];
 //    [self.map addAnnotation:pin];
-//
-//    
-//    
-//
+
+    
+    
+
 //}
 
 
@@ -113,7 +113,11 @@
     }
 
 - (IBAction)pinpin:(id)sender {
-  
+   // MKUserLocation *userLocation;
+   // CLLocation *userLocation = [location lastObject];
+   //     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([self getLocation], coordinate.latitude, coordinate.longitude);
+    //[self.map setRegion:[self.map regionThatFits:region] animated:YES];
+    
     [self coordinatesForNORMMyLocation];
     
     // Add an annotation
