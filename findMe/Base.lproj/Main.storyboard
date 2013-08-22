@@ -34,6 +34,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.44999999999999962" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Без имени-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nqb-rH-tFI">
+                                <rect key="frame" x="-135" y="-82" width="469" height="651"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пароль" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKC-Qb-mHC">
                                 <rect key="frame" x="26" y="322" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -217,12 +221,14 @@
                     <navigationItem key="navigationItem" id="amB-kR-Q2L">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="QfZ-X3-zAO"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="x9m-C9-bOV">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KhJ-OY-kf5">
-                                <rect key="frame" x="217" y="5" width="87" height="33"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="228" verticalHuggingPriority="182" horizontalCompressionResistancePriority="795" verticalCompressionResistancePriority="730" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="KhJ-OY-kf5">
+                                <rect key="frame" x="176" y="0.0" width="128" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Выйти из vk">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Выйти из vk" backgroundImage="Button3.png">
+                                    <color key="titleColor" red="0.270588249" green="0.2117647231" blue="0.15294118230000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <action selector="logOut:" destination="v5E-X6-pbv" eventType="touchUpInside" id="wnz-fI-QFW"/>
@@ -596,6 +602,7 @@
         <image name="back.png" width="205" height="182"/>
         <image name="logo2.png" width="59.05511474609375" height="59.05511474609375"/>
         <image name="map_pin_2-128.png" width="128" height="128"/>
+        <image name="Без имени-2.png" width="320" height="505"/>
     </resources>
     <color key="tintColor" red="0.270588249" green="0.2117647231" blue="0.15294118230000001" alpha="1" colorSpace="deviceRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
