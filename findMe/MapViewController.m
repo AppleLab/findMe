@@ -70,10 +70,10 @@ map.delegate = self;
     
     // Задаются координаты для области поиска
     CLLocationCoordinate2D commuterLotCoords[4]={
-        CLLocationCoordinate2DMake(41.0037,-104.0556),
-        CLLocationCoordinate2DMake(44.9949,-104.0584),
-        CLLocationCoordinate2DMake(44.9998,-111.0539),
-        CLLocationCoordinate2DMake(41.0037,-104.0556)};
+        CLLocationCoordinate2DMake(37.33427694224872, -122.03229177885135),
+        CLLocationCoordinate2DMake(37.33023332261539, -122.03219521932681),
+        CLLocationCoordinate2DMake( 37.33087315034353, -122.02212084226687),
+        CLLocationCoordinate2DMake(37.33469494114837, -122.02202428274234)};
     
     //Вызывается прорисовка границ по координатам
     MKPolygon *commuterPoly1 = [MKPolygon polygonWithCoordinates:commuterLotCoords count:4];
@@ -144,9 +144,9 @@ map.delegate = self;
 -(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id < MKOverlay> )overlay{
     if([overlay isKindOfClass:[MKPolygon class]]){
         MKPolygonView *view = [[[MKPolygonView alloc] initWithOverlay:overlay] init];
-        view.lineWidth=20;
-        view.strokeColor=[UIColor blueColor];
-        view.fillColor=[[UIColor blueColor] colorWithAlphaComponent:0.5];
+        view.lineWidth=4;
+        view.strokeColor=[UIColor redColor];
+        view.fillColor=[[UIColor redColor] colorWithAlphaComponent:0.2];
         return view;
     }
     MKCircleView *circleView = [[MKCircleView alloc] initWithCircle:(MKCircle *)overlay];
