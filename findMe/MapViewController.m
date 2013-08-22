@@ -146,7 +146,7 @@ map.delegate = self;
         MKPolygonView *view = [[[MKPolygonView alloc] initWithOverlay:overlay] init];
         view.lineWidth=4;
         view.strokeColor=[UIColor redColor];
-        view.fillColor=[[UIColor redColor] colorWithAlphaComponent:0.5];
+        view.fillColor=[[UIColor redColor] colorWithAlphaComponent:0.2];
         return view;
     }
     MKCircleView *circleView = [[MKCircleView alloc] initWithCircle:(MKCircle *)overlay];
