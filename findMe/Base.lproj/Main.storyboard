@@ -247,10 +247,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16D-gO-yDV">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10075043_znak_voprosa.gif" translatesAutoresizingMaskIntoConstraints="NO" id="16D-gO-yDV">
                                 <rect key="frame" x="15" y="75" width="159" height="190"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Помоги найти!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZ8-0d-KyY">
                                 <rect key="frame" x="163" y="20" width="126" height="21"/>
@@ -297,12 +297,11 @@
                                     <segue destination="KAp-k2-hdh" kind="push" id="eJv-cL-ODt"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" tag="3" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="lMV-Hz-ek1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" tag="3" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" keyboardDismissMode="onDrag" text="Полная информация о пропавшем" translatesAutoresizingMaskIntoConstraints="NO" id="lMV-Hz-ek1">
                                 <rect key="frame" x="15" y="279" width="268" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98390811749999996" green="0.91702253960000002" blue="0.83812865920000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.68776456669999997" green="0.64101067810000001" blue="0.58586282999999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -590,6 +589,7 @@
     </scenes>
     <resources>
         <image name="07-map-marker.png" width="16" height="26"/>
+        <image name="10075043_znak_voprosa.gif" width="311" height="345"/>
         <image name="103-map.png" width="26" height="21"/>
         <image name="Button3.png" width="130" height="50"/>
         <image name="NoLogo_2.png" width="126" height="78.740158081054688"/>
