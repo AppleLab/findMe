@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="5ZP-MG-0Mf">
             <objects>
-                <viewController id="ynM-kr-v0M" sceneMemberID="viewController">
+                <viewController id="ynM-kr-v0M" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qQG-e1-67P"/>
                         <viewControllerLayoutGuide type="bottom" id="qEv-du-i6f"/>
@@ -106,7 +106,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cQ0-nG-dTS"/>
                     <connections>
-                        <outlet property="loginTextfield" destination="stS-en-04U" id="G7Y-kA-g75"/>
+                        <outlet property="loginTextfield" destination="stS-en-04U" id="b3U-dN-MJo"/>
                         <outlet property="passwordTextfield" destination="mV2-3W-KYG" id="3wS-Gr-lU5"/>
                     </connections>
                 </viewController>
