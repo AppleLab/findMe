@@ -25,6 +25,12 @@
 
 - (void)viewDidLoad
 {
+    //self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"back.png"]];
+    
+    
+   UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back_1.png"]];
+    self.tableView.backgroundView = imageView;
+    self.tableView.backgroundColor = [UIColor colorWithRed:245/256.0 green:233/256.0 blue:218/256.0 alpha:1.0];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -33,6 +39,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     people = [NSArray arrayWithObjects:@"Поиск 1" ,@"Поиск 2", @"Поиск 3", @"Поиск 4", nil];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -120,4 +127,25 @@
 
  */
 
+- (IBAction)logOut:(id)sender {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults removeObjectForKey:@"access_token"];
+    [userDefaults synchronize];
+    
+//    [self dismissViewControllerAnimated:YES completion:^{
+//        //present another modal view controller here
+//        
+//    }];
+    NSHTTPCookie *cookie;
+    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    for (cookie in [storage cookies]) {
+        [storage deleteCookie:cookie];
+    }
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"MainView"];
+    [self presentViewController:yourViewController animated:YES completion:nil];
+
+}
 @end

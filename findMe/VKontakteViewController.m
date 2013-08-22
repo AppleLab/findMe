@@ -56,19 +56,19 @@
     [super viewDidLoad];
     
     self.access_token = [[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"];
+    
     if (access_token) {
-        [web removeFromSuperview];
-        self.web = nil;
+
+        
     } else {
-              
+        
         NSString *authorizationLink = [NSString stringWithFormat:@"http://oauth.vk.com/authorize?client_id=3825226&scope=offline&redirect_uri=https://oauth.vk.com/blank.html&display=touch&response_type=token"];
-        
         NSURL *url = [NSURL URLWithString:authorizationLink];
-        
         web.hidden = NO;
         [web loadRequest:[NSURLRequest requestWithURL:url]];
     }
 }
+
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
     self.access_token = [self stringBetweenString:@"access_token="
@@ -80,11 +80,12 @@
         
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"NavigControl"];
-        [self presentModalViewController:yourViewController animated:YES];
+        [self presentViewController:yourViewController animated:YES completion:nil];
         
     }
 }
 
-
-
 @end
+
+
+
