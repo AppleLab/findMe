@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Npv-4N-97U">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Miniature View Controller-->
         <scene sceneID="cqT-4u-V2d">
             <objects>
-                <viewController id="Npv-4N-97U" sceneMemberID="viewController">
+                <viewController id="Npv-4N-97U" customClass="MiniatureViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o7C-lY-rTI"/>
                         <viewControllerLayoutGuide type="bottom" id="isk-nr-2Oo"/>
@@ -15,12 +15,16 @@
                     <view key="view" contentMode="scaleToFill" id="e5f-GQ-bET">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="54H-f5-Z8d"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="gotoStartPage" id="wGv-GX-Suw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isx-ee-WUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="-308"/>
+            <point key="canvasLocation" x="1882" y="2"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -293,7 +297,7 @@
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KAp-k2-hdh" kind="push" id="eJv-cL-ODt"/>
+                                    <segue destination="xnZ-RS-eJH" kind="push" id="XFD-Vv-0tl"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" tag="3" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="lMV-Hz-ek1">
@@ -373,14 +377,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.96078437569999997" green="0.91372555489999996" blue="0.85490202900000001" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.270588249" green="0.2117647231" blue="0.15294118230000001" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="dQ6-4t-ugb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aR-Rb-kWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5515" y="144"/>
+            <point key="canvasLocation" x="5955" y="398"/>
+        </scene>
+        <!--Psy View Controller-->
+        <scene sceneID="IIv-mA-TCV">
+            <objects>
+                <viewController id="xnZ-RS-eJH" customClass="PsyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fJV-jU-fpy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sjq-tJ-pUw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jEz-hd-BJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0s-Cd-c0w">
+                                <rect key="frame" x="245" y="528" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Далее">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KAp-k2-hdh" kind="push" id="lGS-tq-RCP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93766983699999995" green="0.83406664379999995" blue="0.54255497340000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h4I-xp-9s8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ox-2F-Iky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5414" y="212"/>
         </scene>
         <!--Map View Controller - Карта-->
         <scene sceneID="BXm-xT-Xhd">

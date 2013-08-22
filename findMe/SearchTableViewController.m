@@ -132,10 +132,6 @@
     [userDefaults removeObjectForKey:@"access_token"];
     [userDefaults synchronize];
     
-//    [self dismissViewControllerAnimated:YES completion:^{
-//        //present another modal view controller here
-//        
-//    }];
     NSHTTPCookie *cookie;
     NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
     for (cookie in [storage cookies]) {

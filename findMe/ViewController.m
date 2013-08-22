@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "VKontakteViewController.h"
 
 @interface ViewController ()
 
@@ -17,10 +18,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
-	// Do any additional setup after loading the view, typically from a nib.
-   //
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +37,7 @@
     else{
         
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"webViewVK"];
+        UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"NavigControl"];
         [self presentViewController:yourViewController animated:YES completion:nil];
 
         
