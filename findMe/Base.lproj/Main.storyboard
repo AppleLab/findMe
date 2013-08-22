@@ -19,7 +19,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="54H-f5-Z8d"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="gotoStartPage" id="wGv-GX-Suw"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="gotoStartPage" modalTransitionStyle="crossDissolve" id="wGv-GX-Suw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isx-ee-WUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
