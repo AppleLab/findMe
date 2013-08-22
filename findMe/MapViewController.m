@@ -70,10 +70,10 @@ map.delegate = self;
     
     // Задаются координаты для области поиска
     CLLocationCoordinate2D commuterLotCoords[4]={
-        CLLocationCoordinate2DMake(37.40747060584715, -122.07559156093748),
-        CLLocationCoordinate2DMake(37.42165036170171, -121.81054639492186),
-        CLLocationCoordinate2DMake(37.234917576376404, -121.76248120937498),
-        CLLocationCoordinate2DMake(37.23382420727215, -122.06185865078123)};
+        CLLocationCoordinate2DMake(37.33427694224872, -122.03229177885135),
+        CLLocationCoordinate2DMake(37.33023332261539, -122.03219521932681),
+        CLLocationCoordinate2DMake( 37.33087315034353, -122.02212084226687),
+        CLLocationCoordinate2DMake(37.33469494114837, -122.02202428274234)};
     
     //Вызывается прорисовка границ по координатам
     MKPolygon *commuterPoly1 = [MKPolygon polygonWithCoordinates:commuterLotCoords count:4];
