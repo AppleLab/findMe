@@ -9,7 +9,7 @@
 #import "MapViewController.h"
 #import "MapTrackingAnnotation.h"
 #import "MapNoteAnnotation.h"
-
+#import "ViewController.h"
 
 @interface MapViewController ()
 
@@ -21,6 +21,7 @@
 @synthesize locationManager;
 @synthesize coordinate;
 @synthesize location;
+@synthesize coordinateForPin;
 
 - (void)viewDidUnload
 {
@@ -172,15 +173,24 @@ map.delegate = self;
     //[self.map setRegion:[self.map regionThatFits:region] animated:YES];
     
     [self coordinatesForNORMMyLocation];
-    
-    // Add an annotation
+    coordinateForPin = coordinate;
+}
+-(void)createPinWithTitle:(NSString *)pinTitle andWithSubtitle:(NSString *)pinSubtitle {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    // to-do: create pin object with characteristics..
     MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
-    point.coordinate = coordinate;
-    point.title = @"Where am I?";
-    point.subtitle = @"I'm here!!!";
+    point.coordinate = coordinateForPin;
+    point.title = pinTitle;
+    point.subtitle = pinSubtitle;
     
     [self.map addAnnotation:point];
 }
 
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"addTitle"]){
+        AddDescriptionController *addDisc = (AddDescriptionController*)segue.destinationViewController;
+        addDisc.delegate = self;
+    }
+}
 @end
+

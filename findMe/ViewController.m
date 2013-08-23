@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "VKontakteViewController.h"
+#import "MapViewController.h"
 
 @interface ViewController ()
 
@@ -49,9 +50,12 @@
         
         [self.loginTextfield resignFirstResponder];
         [self.passwordTextfield resignFirstResponder];
-        [self.marksTextfield resignFirstResponder];
-        [self.describeTextField resignFirstResponder];
-        
+    
     }
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    MapViewController *viewMap = [segue destinationViewController];
+    
+    
+}
 
 @end

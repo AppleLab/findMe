@@ -427,7 +427,7 @@
         <!--Map View Controller - Карта-->
         <scene sceneID="BXm-xT-Xhd">
             <objects>
-                <viewController id="2PP-Rz-DXf" customClass="MapViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="addTitle" storyboardIdentifier="addTitle" id="2PP-Rz-DXf" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HxS-Tx-BZB"/>
                         <viewControllerLayoutGuide type="bottom" id="SP8-iI-NPq"/>
@@ -454,8 +454,8 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pinpin:" destination="2PP-Rz-DXf" eventType="touchUpInside" id="WhZ-WS-WdZ"/>
-                                    <segue destination="fw1-HS-Moo" kind="push" id="1vC-3G-9zR"/>
+                                    <action selector="pinpin:" destination="2PP-Rz-DXf" eventType="touchUpInside" id="la4-I2-sfX"/>
+                                    <segue destination="fw1-HS-Moo" kind="modal" identifier="addTitle" id="BB4-0b-p0d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrC-vk-yIc">
@@ -498,10 +498,10 @@
             </objects>
             <point key="canvasLocation" x="4442" y="-1010"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Description Controller-->
         <scene sceneID="Lk4-pW-h63">
             <objects>
-                <viewController id="fw1-HS-Moo" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="fw1-HS-Moo" customClass="AddDescriptionController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hcb-VN-ufq"/>
                         <viewControllerLayoutGuide type="bottom" id="vyZ-l9-Xqy"/>
@@ -534,6 +534,9 @@
                                     <color key="titleColor" red="0.270588249" green="0.2117647231" blue="0.15294118230000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="getDirection:" destination="fw1-HS-Moo" eventType="touchUpInside" id="VAf-D5-hTF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Описание" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7T-j1-vBT">
                                 <rect key="frame" x="39" y="135" width="137" height="21"/>
@@ -545,17 +548,6 @@
                                 <rect key="frame" x="121" y="386" width="205" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQv-hB-PGY">
-                                <rect key="frame" x="39" y="468" width="160" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
-                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="Удалить метку" backgroundImage="Button3.png">
-                                    <color key="titleColor" red="0.44391185259999999" green="0.21230048409999999" blue="0.1780631399" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.49999999999999961" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="RFN-AT-gle">
                                 <rect key="frame" x="39" y="164" width="255" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -572,12 +564,15 @@
                     </navigationItem>
                     <connections>
                         <outlet property="MarksTextfield" destination="tdI-f5-KJW" id="mhL-WW-iSq"/>
-                        <outlet property="describeTextField" destination="RFN-AT-gle" id="IEX-MV-CSz"/>
+                        <outlet property="describeTextField" destination="RFN-AT-gle" id="Umb-Yo-vRK"/>
+                        <outlet property="marksTextfield" destination="tdI-f5-KJW" id="0Ci-IS-qUf"/>
+                        <outlet property="pinSubtitleField" destination="RFN-AT-gle" id="ZQN-tq-Stm"/>
+                        <outlet property="pinTitleField" destination="tdI-f5-KJW" id="X0n-eX-9jf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qS1-HK-MZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4870" y="-1635"/>
+            <point key="canvasLocation" x="4873" y="-1634"/>
         </scene>
         <!--View Controller - Метки-->
         <scene sceneID="WRb-vo-Lh5">

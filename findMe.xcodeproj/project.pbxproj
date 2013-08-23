@@ -70,6 +70,7 @@
 		CEAB561F17BFDA1E00CD5325 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAB561D17BFDA1E00CD5325 /* back.png */; };
 		CEAB562017BFDA1E00CD5325 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEAB561E17BFDA1E00CD5325 /* logo1.png */; };
 		CEB9553417BB735200840EF0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9553317BB735200840EF0 /* MapKit.framework */; };
+		CEBB4CE017C73BC5000FEC4A /* AddDescriptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB4CDF17C73BC5000FEC4A /* AddDescriptionController.m */; };
 		CEBFDE9617C618C500B4F970 /* NoLogo_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBFDE9517C618C500B4F970 /* NoLogo_2.png */; };
 		CED0F5FB17C4D0A700153AAF /* 103-map.png in Resources */ = {isa = PBXBuildFile; fileRef = CED0F5FA17C4D0A700153AAF /* 103-map.png */; };
 		CEDD983217C4D39C005FA655 /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = CED0F5FC17C4D0C600153AAF /* 07-map-marker.png */; };
@@ -177,6 +178,8 @@
 		CEAB561D17BFDA1E00CD5325 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		CEAB561E17BFDA1E00CD5325 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
 		CEB9553317BB735200840EF0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CEBB4CDE17C73BC5000FEC4A /* AddDescriptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDescriptionController.h; sourceTree = "<group>"; };
+		CEBB4CDF17C73BC5000FEC4A /* AddDescriptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDescriptionController.m; sourceTree = "<group>"; };
 		CEBFDE9517C618C500B4F970 /* NoLogo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoLogo_2.png; sourceTree = "<group>"; };
 		CED0F5FA17C4D0A700153AAF /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "103-map.png"; path = "findMe/103-map.png"; sourceTree = SOURCE_ROOT; };
 		CED0F5FC17C4D0C600153AAF /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "07-map-marker.png"; path = "findMe/07-map-marker.png"; sourceTree = SOURCE_ROOT; };
@@ -349,6 +352,8 @@
 				CEA2D3C017C6185200F43304 /* PsyViewController.m */,
 				CEA2D3E317C61F4A00F43304 /* MiniatureViewController.h */,
 				CEA2D3E417C61F4A00F43304 /* MiniatureViewController.m */,
+				CEBB4CDE17C73BC5000FEC4A /* AddDescriptionController.h */,
+				CEBB4CDF17C73BC5000FEC4A /* AddDescriptionController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -628,6 +633,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF5FCD017BF69C200AD3643 /* APIDownload.m in Sources */,
+				CEBB4CE017C73BC5000FEC4A /* AddDescriptionController.m in Sources */,
 				CE464AAB17C20BFC00466E55 /* MapTrackingAnnotation.m in Sources */,
 				CEF5FCEB17BF69D400AD3643 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
 				CEF5FCE717BF69D400AD3643 /* CDataScanner.m in Sources */,

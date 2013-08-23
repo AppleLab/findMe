@@ -11,9 +11,9 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *loginTextfield;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextfield;
-@property (weak, nonatomic) IBOutlet UITextField *marksTextfield;
-@property (weak, nonatomic) IBOutlet UITextView *describeTextField;
 
+@property MKPointAnnotation *pinPoint;
+@property CLLocationCoordinate2D coordPin;
 
 - (IBAction)authVkButton:(id)sender;
 
