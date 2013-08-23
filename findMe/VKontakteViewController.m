@@ -62,7 +62,7 @@
         
     } else {
         
-        NSString *authorizationLink = [NSString stringWithFormat:@"http://oauth.vk.com/authorize?client_id=3825226&scope=offline&redirect_uri=https://oauth.vk.com/blank.html&display=touch&response_type=token"];
+        NSString *authorizationLink = [NSString stringWithFormat:@"http://oauth.vk.com/authorize?client_id=3837709&scope=offline&redirect_uri=https://oauth.vk.com/blank.html&display=touch&response_type=token"];
         NSURL *url = [NSURL URLWithString:authorizationLink];
         web.hidden = NO;
         [web loadRequest:[NSURLRequest requestWithURL:url]];
