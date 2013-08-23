@@ -106,23 +106,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C5F7B87A17B9E9B100FB6223 /* findMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F7B87A17B9E9B100FB6223 /* По следам.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "По следам.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F7B87D17B9E9B100FB6223 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5F7B87F17B9E9B100FB6223 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C5F7B88117B9E9B100FB6223 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C5F7B88517B9E9B100FB6223 /* findMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "findMe-Info.plist"; sourceTree = "<group>"; };
+		C5F7B88517B9E9B100FB6223 /* По следам-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "По следам-Info.plist"; sourceTree = "<group>"; };
 		C5F7B88717B9E9B100FB6223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5F7B88917B9E9B100FB6223 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C5F7B88B17B9E9B100FB6223 /* findMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "findMe-Prefix.pch"; sourceTree = "<group>"; };
+		C5F7B88B17B9E9B100FB6223 /* По следам-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "По следам-Prefix.pch"; sourceTree = "<group>"; };
 		C5F7B88C17B9E9B100FB6223 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5F7B88D17B9E9B100FB6223 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C5F7B89017B9E9B100FB6223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5F7B89217B9E9B100FB6223 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C5F7B89317B9E9B100FB6223 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C5F7B89517B9E9B100FB6223 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C5F7B89B17B9E9B100FB6223 /* findMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = findMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F7B89B17B9E9B100FB6223 /* По следамTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "По следамTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F7B89C17B9E9B100FB6223 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C5F7B8A417B9E9B100FB6223 /* findMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "findMeTests-Info.plist"; sourceTree = "<group>"; };
+		C5F7B8A417B9E9B100FB6223 /* По следамTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "По следамTests-Info.plist"; sourceTree = "<group>"; };
 		C5F7B8A617B9E9B100FB6223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5F7B8A817B9E9B100FB6223 /* findMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = findMeTests.m; sourceTree = "<group>"; };
 		C5F7B8B317B9E9DE00FB6223 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
@@ -262,8 +262,8 @@
 		C5F7B87B17B9E9B100FB6223 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5F7B87A17B9E9B100FB6223 /* findMe.app */,
-				C5F7B89B17B9E9B100FB6223 /* findMeTests.xctest */,
+				C5F7B87A17B9E9B100FB6223 /* По следам.app */,
+				C5F7B89B17B9E9B100FB6223 /* По следамTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,10 +303,10 @@
 				C5F7B88C17B9E9B100FB6223 /* AppDelegate.h */,
 				C5F7B88D17B9E9B100FB6223 /* AppDelegate.m */,
 				C5F7B89517B9E9B100FB6223 /* Images.xcassets */,
-				C5F7B88517B9E9B100FB6223 /* findMe-Info.plist */,
+				C5F7B88517B9E9B100FB6223 /* По следам-Info.plist */,
 				C5F7B88617B9E9B100FB6223 /* InfoPlist.strings */,
 				C5F7B88917B9E9B100FB6223 /* main.m */,
-				C5F7B88B17B9E9B100FB6223 /* findMe-Prefix.pch */,
+				C5F7B88B17B9E9B100FB6223 /* По следам-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -323,7 +323,7 @@
 		C5F7B8A317B9E9B100FB6223 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C5F7B8A417B9E9B100FB6223 /* findMeTests-Info.plist */,
+				C5F7B8A417B9E9B100FB6223 /* По следамTests-Info.plist */,
 				C5F7B8A517B9E9B100FB6223 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -492,9 +492,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C5F7B87917B9E9B100FB6223 /* findMe */ = {
+		C5F7B87917B9E9B100FB6223 /* По следам */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5F7B8AC17B9E9B100FB6223 /* Build configuration list for PBXNativeTarget "findMe" */;
+			buildConfigurationList = C5F7B8AC17B9E9B100FB6223 /* Build configuration list for PBXNativeTarget "По следам" */;
 			buildPhases = (
 				C5F7B87617B9E9B100FB6223 /* Sources */,
 				C5F7B87717B9E9B100FB6223 /* Frameworks */,
@@ -504,14 +504,14 @@
 			);
 			dependencies = (
 			);
-			name = findMe;
+			name = "По следам";
 			productName = findMe;
-			productReference = C5F7B87A17B9E9B100FB6223 /* findMe.app */;
+			productReference = C5F7B87A17B9E9B100FB6223 /* По следам.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C5F7B89A17B9E9B100FB6223 /* findMeTests */ = {
+		C5F7B89A17B9E9B100FB6223 /* По следамTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5F7B8AF17B9E9B100FB6223 /* Build configuration list for PBXNativeTarget "findMeTests" */;
+			buildConfigurationList = C5F7B8AF17B9E9B100FB6223 /* Build configuration list for PBXNativeTarget "По следамTests" */;
 			buildPhases = (
 				C5F7B89717B9E9B100FB6223 /* Sources */,
 				C5F7B89817B9E9B100FB6223 /* Frameworks */,
@@ -522,9 +522,9 @@
 			dependencies = (
 				C5F7B8A117B9E9B100FB6223 /* PBXTargetDependency */,
 			);
-			name = findMeTests;
+			name = "По следамTests";
 			productName = findMeTests;
-			productReference = C5F7B89B17B9E9B100FB6223 /* findMeTests.xctest */;
+			productReference = C5F7B89B17B9E9B100FB6223 /* По следамTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -548,7 +548,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C5F7B87517B9E9B100FB6223 /* Build configuration list for PBXProject "findMe" */;
+			buildConfigurationList = C5F7B87517B9E9B100FB6223 /* Build configuration list for PBXProject "По следам" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -561,8 +561,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C5F7B87917B9E9B100FB6223 /* findMe */,
-				C5F7B89A17B9E9B100FB6223 /* findMeTests */,
+				C5F7B87917B9E9B100FB6223 /* По следам */,
+				C5F7B89A17B9E9B100FB6223 /* По следамTests */,
 			);
 		};
 /* End PBXProject section */
@@ -681,7 +681,7 @@
 /* Begin PBXTargetDependency section */
 		C5F7B8A117B9E9B100FB6223 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C5F7B87917B9E9B100FB6223 /* findMe */;
+			target = C5F7B87917B9E9B100FB6223 /* По следам */;
 			targetProxy = C5F7B8A017B9E9B100FB6223 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -789,9 +789,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "findMe/findMe-Prefix.pch";
-				INFOPLIST_FILE = "findMe/findMe-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "findMe/По следам-Prefix.pch";
+				INFOPLIST_FILE = "findMe/По следам-Info.plist";
+				PRODUCT_NAME = "По следам";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -803,9 +803,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "findMe/findMe-Prefix.pch";
-				INFOPLIST_FILE = "findMe/findMe-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "findMe/По следам-Prefix.pch";
+				INFOPLIST_FILE = "findMe/По следам-Info.plist";
+				PRODUCT_NAME = "По следам";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -825,8 +825,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "findMeTests/findMeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "findMeTests/По следамTests-Info.plist";
+				PRODUCT_NAME = "По следамTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -843,8 +843,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "findMe/findMe-Prefix.pch";
-				INFOPLIST_FILE = "findMeTests/findMeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "findMeTests/По следамTests-Info.plist";
+				PRODUCT_NAME = "По следамTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -853,7 +853,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C5F7B87517B9E9B100FB6223 /* Build configuration list for PBXProject "findMe" */ = {
+		C5F7B87517B9E9B100FB6223 /* Build configuration list for PBXProject "По следам" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5F7B8AA17B9E9B100FB6223 /* Debug */,
@@ -862,7 +862,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5F7B8AC17B9E9B100FB6223 /* Build configuration list for PBXNativeTarget "findMe" */ = {
+		C5F7B8AC17B9E9B100FB6223 /* Build configuration list for PBXNativeTarget "По следам" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5F7B8AD17B9E9B100FB6223 /* Debug */,
@@ -871,7 +871,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C5F7B8AF17B9E9B100FB6223 /* Build configuration list for PBXNativeTarget "findMeTests" */ = {
+		C5F7B8AF17B9E9B100FB6223 /* Build configuration list for PBXNativeTarget "По следамTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5F7B8B017B9E9B100FB6223 /* Debug */,
