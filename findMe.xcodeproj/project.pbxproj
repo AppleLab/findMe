@@ -26,6 +26,9 @@
 		CE239FA517BE5D6F00C5256A /* Без имени-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE239FA317BE480100C5256A /* Без имени-2.png */; };
 		CE3B984817BDF76100E6E1D1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3B984717BDF76100E6E1D1 /* CoreData.framework */; };
 		CE464AAB17C20BFC00466E55 /* MapTrackingAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464AAA17C20BFC00466E55 /* MapTrackingAnnotation.m */; };
+		CE567FC117C754DD00454FF5 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567FBF17C754DD00454FF5 /* 114.png */; };
+		CE567FC217C754DD00454FF5 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567FC017C754DD00454FF5 /* 120.png */; };
+		CE567FC417C7551300454FF5 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567FC317C7551300454FF5 /* 80.png */; };
 		CE8FEE0F17BD119A00C8F296 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8FEE0E17BD119A00C8F296 /* CoreLocation.framework */; };
 		CE9B18E417C654B4001318C2 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567F3817C6524B00454FF5 /* 1.png */; };
 		CE9B18E517C654FB001318C2 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567F3917C6524B00454FF5 /* 10.png */; };
@@ -166,6 +169,9 @@
 		CE567F5917C6524B00454FF5 /* win_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_7.png; sourceTree = "<group>"; };
 		CE567F5A17C6524B00454FF5 /* win_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_8.png; sourceTree = "<group>"; };
 		CE567F5B17C6524B00454FF5 /* win_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win_9.png; sourceTree = "<group>"; };
+		CE567FBF17C754DD00454FF5 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
+		CE567FC017C754DD00454FF5 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
+		CE567FC317C7551300454FF5 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
 		CE8FEE0E17BD119A00C8F296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CE9B190717C655FF001318C2 /* 10075043_znak_voprosa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10075043_znak_voprosa.gif; sourceTree = "<group>"; };
 		CE9B190817C655FF001318C2 /* map_pin_2-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pin_2-128.png"; sourceTree = "<group>"; };
@@ -361,6 +367,9 @@
 		CE239F8817BE437A00C5256A /* imiges */ = {
 			isa = PBXGroup;
 			children = (
+				CE567FC317C7551300454FF5 /* 80.png */,
+				CE567FBF17C754DD00454FF5 /* 114.png */,
+				CE567FC017C754DD00454FF5 /* 120.png */,
 				CE9B190717C655FF001318C2 /* 10075043_znak_voprosa.gif */,
 				CE9B190817C655FF001318C2 /* map_pin_2-128.png */,
 				CE567F3717C6524B00454FF5 /* Miniature */,
@@ -578,6 +587,7 @@
 				CE239FA417BE5D5400C5256A /* Button3.png in Resources */,
 				CE9B18F717C65500001318C2 /* win_1.png in Resources */,
 				CE9B18EC17C654FB001318C2 /* 17.png in Resources */,
+				CE567FC417C7551300454FF5 /* 80.png in Resources */,
 				CEAB561F17BFDA1E00CD5325 /* back.png in Resources */,
 				CE9B18F117C654FB001318C2 /* 4.png in Resources */,
 				CE9B190617C65500001318C2 /* win_9.png in Resources */,
@@ -600,6 +610,7 @@
 				CE9B18E717C654FB001318C2 /* 12.png in Resources */,
 				CE9B18F417C654FB001318C2 /* 7.png in Resources */,
 				CEDD983217C4D39C005FA655 /* 07-map-marker.png in Resources */,
+				CE567FC217C754DD00454FF5 /* 120.png in Resources */,
 				CE9B18FF17C65500001318C2 /* win_2.png in Resources */,
 				CE9B18ED17C654FB001318C2 /* 18.png in Resources */,
 				CE9B18F317C654FB001318C2 /* 6.png in Resources */,
@@ -607,6 +618,7 @@
 				CE9B190A17C65600001318C2 /* map_pin_2-128.png in Resources */,
 				C5F7B89117B9E9B100FB6223 /* Main.storyboard in Resources */,
 				CE9B190417C65500001318C2 /* win_7.png in Resources */,
+				CE567FC117C754DD00454FF5 /* 114.png in Resources */,
 				CE9B18FB17C65500001318C2 /* win_13.png in Resources */,
 				CE9B18EB17C654FB001318C2 /* 16.png in Resources */,
 				CE9B190217C65500001318C2 /* win_5.png in Resources */,
