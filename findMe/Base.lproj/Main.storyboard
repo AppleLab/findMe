@@ -261,7 +261,6 @@
                     <navigationItem key="navigationItem" id="JyV-Jr-w26"/>
                     <connections>
                         <outlet property="web" destination="Xu1-NL-ryH" id="exN-K5-ZlR"/>
-                        <segue destination="YQu-4V-jef" kind="modal" id="pbb-3A-z6c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mC4-T3-AKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -746,6 +745,5 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="uLw-eq-TSO"/>
-        <segue reference="YOx-R9-ugv"/>
     </inferredMetricsTieBreakers>
 </document>
