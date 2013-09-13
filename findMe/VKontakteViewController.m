@@ -57,11 +57,7 @@
     
     self.access_token = [[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"];
     
-    if (access_token) {
-
-        
-    } else {
-        
+    if (!access_token) {
         NSString *authorizationLink = [NSString stringWithFormat:@"http://oauth.vk.com/authorize?client_id=3837709&scope=offline&redirect_uri=https://oauth.vk.com/blank.html&display=touch&response_type=token"];
         NSURL *url = [NSURL URLWithString:authorizationLink];
         web.hidden = NO;
@@ -71,17 +67,32 @@
 
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
+    NSString *recievedstring=[[[webView request] URL] absoluteString];
     self.access_token = [self stringBetweenString:@"access_token="
                                         andString:@"&"
-                                      innerString:[[[webView request] URL] absoluteString]];
+                                      innerString:recievedstring];
     if (access_token) {
         [[NSUserDefaults standardUserDefaults] setObject:access_token forKey:@"access_token"];
         [[NSUserDefaults standardUserDefaults] synchronize];
-        
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"NavigControl"];
         [self presentViewController:yourViewController animated:YES completion:nil];
+    }
+    else{
+        NSString *error_reason=[self stringBetweenString:@"error_reason="
+                                               andString:@"&"
+                                             innerString:recievedstring];
+        NSString *err=[self stringBetweenString:@"err="
+                                      andString:@""
+                                    innerString:recievedstring];
         
+        if([error_reason isEqualToString:@"user_denied"]||[err isEqualToString:@"2"]){
+            [[NSUserDefaults standardUserDefaults] setObject:access_token forKey:@"access_token"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"MainView"];
+            [self presentViewController:yourViewController animated:YES completion:nil];
+        }
     }
 }
 
