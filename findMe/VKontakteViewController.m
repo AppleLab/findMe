@@ -82,7 +82,7 @@
         [[NSUserDefaults standardUserDefaults] synchronize];
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"NavigControl"];
-        [self presentViewController:yourViewController animated:YES completion:nil];
+        [self presentViewController:yourViewController animated:NO completion:nil];
     }
     else{
         NSString *error_reason=[self stringBetweenString:@"error_reason="
@@ -93,9 +93,10 @@
                                     innerString:recievedstring];
         
         if([error_reason isEqualToString:@"user_denied"]||[err isEqualToString:@"2"]){
+            [self.web removeFromSuperview];
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"MainView"];
-            [self presentViewController:yourViewController animated:YES completion:nil];
+            [self presentViewController:yourViewController animated:NO completion:nil];
         }
     }
 }
