@@ -41,6 +41,7 @@
 
 - (IBAction)getDirection:(id)sender {
     [delegate createPinWithTitle:pinTitleField.text andWithSubtitle:pinSubtitleField.text];
+    
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.marksTextfield resignFirstResponder];

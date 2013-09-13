@@ -53,7 +53,7 @@
     
     }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    MapViewController *viewMap = [segue destinationViewController];
+    //MapViewController *viewMap = [segue destinationViewController];
     
     
 }

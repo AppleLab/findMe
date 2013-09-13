@@ -73,7 +73,6 @@
             CGFloat expectedLength = [self.response expectedContentLength];
             CGFloat currentLength = downloadData.length;
             CGFloat percent = currentLength / expectedLength;
-            
             SEL selector = @selector(dataDownloadAtPercent:);
             if ([delegate respondsToSelector:selector]) {
                 [delegate performSelector:selector withObject:[NSNumber numberWithFloat:percent]];
