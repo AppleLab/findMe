@@ -15,11 +15,12 @@
 
 @synthesize web;
 @synthesize access_token;
-
+@synthesize user_id;
 -(void) dealloc;
 {
     self.web = nil;
     self.access_token = nil;
+    self.user_id=nil;
 }
 
 - (void)viewDidUnload
@@ -56,6 +57,7 @@
     [super viewDidLoad];
     
     self.access_token = [[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"];
+    self.user_id=[[NSUserDefaults standardUserDefaults] objectForKey:@"user_id"];
     
     if (!access_token) {
         NSString *authorizationLink = [NSString stringWithFormat:@"http://oauth.vk.com/authorize?client_id=3837709&scope=offline&redirect_uri=https://oauth.vk.com/blank.html&display=touch&response_type=token"];
@@ -72,7 +74,11 @@
                                         andString:@"&"
                                       innerString:recievedstring];
     if (access_token) {
+       self.user_id=[self stringBetweenString:@"user_id="
+                                          andString:@""
+                                        innerString:recievedstring];
         [[NSUserDefaults standardUserDefaults] setObject:access_token forKey:@"access_token"];
+        [[NSUserDefaults standardUserDefaults] setObject:user_id forKey:@"user_id"];
         [[NSUserDefaults standardUserDefaults] synchronize];
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"NavigControl"];
@@ -87,8 +93,6 @@
                                     innerString:recievedstring];
         
         if([error_reason isEqualToString:@"user_denied"]||[err isEqualToString:@"2"]){
-            [[NSUserDefaults standardUserDefaults] setObject:access_token forKey:@"access_token"];
-            [[NSUserDefaults standardUserDefaults] synchronize];
             UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"MainView"];
             [self presentViewController:yourViewController animated:YES completion:nil];
