@@ -17,6 +17,7 @@
 
 @property (nonatomic, retain) NSString *access_token;
 @property (weak, nonatomic) IBOutlet UIWebView *web;
+@property (nonatomic, retain) NSString *user_id;
 
 - (NSString*)stringBetweenString:(NSString*)start
                        andString:(NSString*)end
