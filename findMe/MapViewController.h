@@ -13,7 +13,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "AddDescriptionController.h"
 
-@interface MapViewController : UIViewController<CLLocationManagerDelegate, MKMapViewDelegate,ADCDelegate> {
+@interface MapViewController : UIViewController<CLLocationManagerDelegate, MKMapViewDelegate,ADCDelegate,UITabBarControllerDelegate> {
     MKMapView *mkMapView;
     CLLocationManager *locationManager;
     CLLocationCoordinate2D coordinate;

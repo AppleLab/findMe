@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MarkListController : UITableViewController
-
+@interface MarkListController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableVIew;
+@property NSMutableArray *arr;
 @end

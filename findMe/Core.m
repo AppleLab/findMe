@@ -11,7 +11,7 @@
 static Core* _core;
 
 @implementation Core
-
+@synthesize arr;
 -(id) init
 {
     self = [super init];

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Core : NSObject
-
+@property NSMutableArray *arr;
 +(Core*) core;
 
 @end

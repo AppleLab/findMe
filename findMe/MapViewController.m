@@ -10,6 +10,8 @@
 #import "MapTrackingAnnotation.h"
 #import "MapNoteAnnotation.h"
 #import "ViewController.h"
+#import "Core.h"
+
 
 @interface MapViewController ()
 
@@ -17,12 +19,12 @@
 
 @implementation MapViewController
 
+
 @synthesize map;
 @synthesize locationManager;
 @synthesize coordinate;
 @synthesize location;
 @synthesize coordinateForPin;
-
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -33,13 +35,13 @@
 
 - (void)viewDidLoad
 {
+    [Core core].arr = [[NSMutableArray alloc] init];
     [super viewDidLoad];
     map.showsUserLocation = YES;
     map.userInteractionEnabled = YES;
     map.userTrackingMode = MKUserTrackingModeFollowWithHeading;
     map.delegate = self;
-
-
+    
     [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
     coordinate = [self getLocation];
     MKCoordinateRegion mylocation = { {0.0, 0.0} , {0.0, 0.0} };
@@ -48,7 +50,6 @@
     mylocation.span.longitudeDelta = 0.02f;
     mylocation.span.latitudeDelta = 0.02f;
     [map setRegion:mylocation animated:YES];
-
    
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
@@ -171,7 +172,6 @@ map.delegate = self;
    // CLLocation *userLocation = [location lastObject];
    //     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([self getLocation], coordinate.latitude, coordinate.longitude);
     //[self.map setRegion:[self.map regionThatFits:region] animated:YES];
-    
     [self coordinatesForNORMMyLocation];
     coordinateForPin = coordinate;
 }
@@ -182,8 +182,10 @@ map.delegate = self;
     point.coordinate = coordinateForPin;
     point.title = pinTitle;
     point.subtitle = pinSubtitle;
-    
     [self.map addAnnotation:point];
+    
+    [[Core core].arr addObject:point];
+    NSLog(@"String : %@", [Core core].arr);
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
