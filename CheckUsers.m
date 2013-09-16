@@ -13,7 +13,7 @@
     BOOL *AuthenticationResult;
      //                                         Реализация через файл
     
-    NSString *path = @"/File.strings";
+    NSString *path = @"File.strings";
     NSError *error;
     NSString *stringFromFileAtPath = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
     AuthenticationResult = false;
