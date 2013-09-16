@@ -10,6 +10,7 @@
 #import "VKontakteViewController.h"
 #import "MapViewController.h"
 #import "CheckUsers.h"
+#import "SearchTableViewController.h"
 
 @interface ViewController ()
 
@@ -60,13 +61,13 @@
 }
 
 - (IBAction)enterButton:(id)sender {
-    BOOL AuthenticationResult = [CheckUsers checkLogin: self.loginTextfield.text andPassword:
+    /*BOOL *AuthenticationResult = [CheckUsers checkLogin: self.loginTextfield.text andPassword:
                                  self.passwordTextfield.text];
-    if ( AuthenticationResult == YES ){
+    if ( *AuthenticationResult == YES ){
         
     }
     else{
         
-    }
+    }*/
 }
 @end

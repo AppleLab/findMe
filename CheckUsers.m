@@ -13,18 +13,18 @@
     BOOL *AuthenticationResult;
      //                                         Реализация через файл
     
-    NSString *path = @"users.txt";
+    NSString *path = @"/File.strings";
     NSError *error;
     NSString *stringFromFileAtPath = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
     AuthenticationResult = false;
     if (stringFromFileAtPath == nil){
         //Файл не найден
-        NSLog (@"Error reading file ");
+        NSLog (@"Error reading file %s", stringFromFileAtPath);
     }
     else{
         NSString *str = [NSString stringWithFormat:login, @" ", password];
         if([stringFromFileAtPath hasPrefix: str]){
-            AuthenticationResult = YES;
+            *AuthenticationResult = YES;
         }
     }
     return AuthenticationResult;

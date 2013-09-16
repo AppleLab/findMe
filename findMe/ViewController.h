@@ -17,6 +17,7 @@
 @property CLLocationCoordinate2D coordPin;
 
 - (IBAction)authVkButton:(id)sender;
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
 
 @end
