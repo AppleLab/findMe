@@ -9,5 +9,24 @@
 #import "CheckUsers.h"
 
 @implementation CheckUsers
-
++(BOOL *) checkLogin: (NSString *)login andPassword:(NSString *) password{
+    BOOL *AuthenticationResult;
+     //                                         Реализация через файл
+    
+    NSString *path = @"users.txt";
+    NSError *error;
+    NSString *stringFromFileAtPath = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+    AuthenticationResult = false;
+    if (stringFromFileAtPath == nil){
+        //Файл не найден
+        NSLog (@"Error reading file ");
+    }
+    else{
+        NSString *str = [NSString stringWithFormat:login, @" ", password];
+        if([stringFromFileAtPath hasPrefix: str]){
+            AuthenticationResult = YES;
+        }
+    }
+    return AuthenticationResult;
+}
 @end

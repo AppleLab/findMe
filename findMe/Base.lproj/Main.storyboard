@@ -97,6 +97,7 @@
                                 <state key="selected" backgroundImage="Button3.png"/>
                                 <state key="highlighted" backgroundImage="Button3.png"/>
                                 <connections>
+                                    <action selector="enterButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="u3c-W0-1La"/>
                                     <segue destination="YQu-4V-jef" kind="modal" id="YOx-R9-ugv"/>
                                 </connections>
                             </button>
@@ -307,7 +308,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="Выйти из vk" backgroundImage="Button3.png">
+                                <state key="normal" title="Выйти" backgroundImage="Button3.png">
                                     <color key="titleColor" red="0.270588249" green="0.2117647231" blue="0.15294118230000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
