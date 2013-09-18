@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Npv-4N-97U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YQu-4V-jef">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
@@ -280,7 +280,7 @@
                         <color key="sectionIndexTrackingBackgroundColor" red="0.96078437569999997" green="0.91372555489999996" blue="0.85490202900000001" alpha="1" colorSpace="deviceRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="129" id="O1v-0c-w3j">
-                                <rect key="frame" x="0.0" y="55" width="320" height="129"/>
+                                <rect key="frame" x="0.0" y="119" width="320" height="129"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" ambiguous="YES" tableViewCell="O1v-0c-w3j" id="rpR-sb-fXk">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="128"/>
@@ -469,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aR-Rb-kWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5955" y="398"/>
+            <point key="canvasLocation" x="6211" y="990"/>
         </scene>
         <!--Psy View Controller-->
         <scene sceneID="IIv-mA-TCV">
@@ -501,7 +501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ox-2F-Iky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5414" y="212"/>
+            <point key="canvasLocation" x="5642" y="990"/>
         </scene>
         <!--Map View Controller - Карта-->
         <scene sceneID="BXm-xT-Xhd">
@@ -575,7 +575,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJ2-MZ-JtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4442" y="-1010"/>
+            <point key="canvasLocation" x="6211" y="-1346"/>
         </scene>
         <!--Add Description Controller-->
         <scene sceneID="Lk4-pW-h63">
@@ -650,7 +650,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qS1-HK-MZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4873" y="-1634"/>
+            <point key="canvasLocation" x="6785" y="-1346"/>
         </scene>
         <!--Mark List Controller - Метки-->
         <scene sceneID="WRb-vo-Lh5">
@@ -673,25 +673,41 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" id="hZa-2i-Tj1">
+                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Mark" textLabel="Xr5-15-C1r" style="IBUITableViewCellStyleDefault" id="hZa-2i-Tj1">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="hZa-2i-Tj1" id="8xZ-aI-kpl">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xr5-15-C1r">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dIr-Ne-Mcl" id="XSc-cb-6uT"/>
+                                    <outlet property="delegate" destination="dIr-Ne-Mcl" id="JOr-zS-5KU"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.94901967050000002" green="0.89411771299999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Метки" image="07-map-marker.png" id="1Oh-4X-7lU"/>
                     <navigationItem key="navigationItem" id="wzg-lP-Hnw"/>
+                    <connections>
+                        <outlet property="tableView" destination="hTj-my-Mle" id="mai-MK-uVX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etU-Ae-UYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5976" y="-302"/>
+            <point key="canvasLocation" x="6217" y="-212"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="EKH-sv-cJr">
@@ -714,7 +730,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s3t-4o-nMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5474" y="-1036"/>
+            <point key="canvasLocation" x="5642" y="-660"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DSZ-JU-nKH">

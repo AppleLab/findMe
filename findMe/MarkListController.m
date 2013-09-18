@@ -14,7 +14,6 @@
 @end
 
 @implementation MarkListController
-@synthesize arr;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,8 +28,8 @@
 {
     [super viewDidLoad];
 }
--(void)viewDidAppear:(BOOL)animated{
-    [self.tableVIew reloadData];
+-(void) viewDidAppear:(BOOL)animated{
+    [self.tableView reloadData];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -41,7 +40,7 @@
     return 1;
 }
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [Core core].arr.count ;
+    return [Core core].arr.count;
 }
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier=@"Mark";

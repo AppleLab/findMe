@@ -183,9 +183,7 @@ map.delegate = self;
     point.title = pinTitle;
     point.subtitle = pinSubtitle;
     [self.map addAnnotation:point];
-    
     [[Core core].arr addObject:point];
-    NSLog(@"String : %@", [Core core].arr);
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

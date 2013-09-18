@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MarkListController : UIViewController <UITableViewDataSource,UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableVIew;
-@property NSMutableArray *arr;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
