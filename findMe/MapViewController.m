@@ -35,8 +35,8 @@
 
 - (void)viewDidLoad
 {
-    [Core core].arr = [[NSMutableArray alloc] init];
     [super viewDidLoad];
+    [self.map addAnnotations:[Core core].arr];
     map.showsUserLocation = YES;
     map.userInteractionEnabled = YES;
     map.userTrackingMode = MKUserTrackingModeFollowWithHeading;

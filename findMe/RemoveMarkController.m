@@ -1,20 +1,19 @@
 //
-//  SearchTableViewController.m
-//  findMe
+//  RemoveMarkController.m
+//  По следам
 //
-//  Created by User on 16.08.13.
+//  Created by user on 18.09.13.
 //  Copyright (c) 2013 Ramil Garaev. All rights reserved.
 //
 
-#import "SearchTableViewController.h"
+#import "RemoveMarkController.h"
 #import "Core.h"
-
-@interface SearchTableViewController ()
+@interface RemoveMarkController ()
 
 @end
 
-@implementation SearchTableViewController
-@synthesize people;
+@implementation RemoveMarkController
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -26,13 +25,6 @@
 
 - (void)viewDidLoad
 {
-    //self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"back.png"]];
-    
-    [Core core].arr = [[NSMutableArray alloc] init];
-
-   UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back_1.png"]];
-    self.tableView.backgroundView = imageView;
-    self.tableView.backgroundColor = [UIColor colorWithRed:245/256.0 green:233/256.0 blue:218/256.0 alpha:1.0];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -40,10 +32,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    people = [NSArray arrayWithObjects:@"Поиск 1" ,@"Поиск 2", @"Поиск 3", @"Поиск 4", nil];
-
 }
-
+-(void)viewDidAppear:(BOOL)animated{
+    [self.tableView reloadData];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -54,27 +46,21 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     // Return the number of rows in the section.
-    return [people count];
+    return [Core core].arr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"RemMark";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    cell.textLabel.text = [people objectAtIndex:indexPath.row];
-    
+    cell.textLabel.text=[[[Core core].arr objectAtIndex:indexPath.row] title] ;
     return cell;
 }
 
@@ -117,33 +103,16 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    NSIndexPath *ip=[self.tableView indexPathForSelectedRow];
+    [[Core core].arr removeObjectAtIndex:ip.row];
 }
 
- */
 
-- (IBAction)logOut:(id)sender {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults removeObjectForKey:@"access_token"];
-    [userDefaults synchronize];
-    
-    NSHTTPCookie *cookie;
-    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
-    for (cookie in [storage cookies]) {
-        [storage deleteCookie:cookie];
-    }
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *yourViewController = [storyboard instantiateViewControllerWithIdentifier:@"MainView"];
-    [self presentViewController:yourViewController animated:YES completion:nil];
 
-}
 @end

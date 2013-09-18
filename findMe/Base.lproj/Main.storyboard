@@ -557,9 +557,12 @@
                                 <rect key="frame" x="146" y="61" width="75" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Button" backgroundImage="Button3.png">
+                                <state key="normal" title="Rem Mark" backgroundImage="Button3.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="QnF-rf-wEc" kind="push" id="6Ur-yD-fJl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078437569999997" green="0.91372555489999996" blue="0.85490202900000001" alpha="1" colorSpace="deviceRGB"/>
@@ -569,6 +572,7 @@
                         </accessibility>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Карта" image="103-map.png" id="NNY-D6-Yvy"/>
+                    <navigationItem key="navigationItem" id="a4Y-iY-6Sk"/>
                     <connections>
                         <outlet property="map" destination="dSi-Q7-fs9" id="AI8-w1-yad"/>
                     </connections>
@@ -576,6 +580,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJ2-MZ-JtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6211" y="-1346"/>
+        </scene>
+        <!--Remove Mark Controller-->
+        <scene sceneID="x4Z-jG-ueX">
+            <objects>
+                <tableViewController id="QnF-rf-wEc" customClass="RemoveMarkController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yNU-zB-flM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RemMark" textLabel="OkH-Ut-Djf" style="IBUITableViewCellStyleDefault" id="8ie-42-Hm8">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="8ie-42-Hm8" id="Pnr-eK-ucd">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OkH-Ut-Djf">
+                                            <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="TBg-I3-n15" kind="push" id="vzH-CS-l3r"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QnF-rf-wEc" id="wSe-pu-znV"/>
+                            <outlet property="delegate" destination="QnF-rf-wEc" id="wKN-Yb-hkA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mA1-DP-Peb"/>
+                    <connections>
+                        <outlet property="tableView" destination="yNU-zB-flM" id="KoI-bz-zBD"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5GP-Jo-QLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6769" y="-2147"/>
         </scene>
         <!--Add Description Controller-->
         <scene sceneID="Lk4-pW-h63">
@@ -650,7 +698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qS1-HK-MZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6785" y="-1346"/>
+            <point key="canvasLocation" x="6769" y="-810"/>
         </scene>
         <!--Mark List Controller - Метки-->
         <scene sceneID="WRb-vo-Lh5">
@@ -707,7 +755,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etU-Ae-UYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6217" y="-212"/>
+            <point key="canvasLocation" x="6211" y="-178"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="EKH-sv-cJr">
@@ -775,6 +823,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="vzH-CS-l3r"/>
         <segue reference="uLw-eq-TSO"/>
     </inferredMetricsTieBreakers>
 </document>
