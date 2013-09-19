@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface CheckUsers : NSObject
-+(BOOL *) checkLogin: (NSString *)login andPassword:(NSString *) password;
++(BOOL) checkLogin: (NSString *)login andPassword:(NSString *) password;
 
 @end

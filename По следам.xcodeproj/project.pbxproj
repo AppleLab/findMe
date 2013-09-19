@@ -27,6 +27,7 @@
 		CE27191417E323450062F6A9 /* CheckUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = CE27191317E323450062F6A9 /* CheckUsers.m */; };
 		CE3B984817BDF76100E6E1D1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3B984717BDF76100E6E1D1 /* CoreData.framework */; };
 		CE464AAB17C20BFC00466E55 /* MapTrackingAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464AAA17C20BFC00466E55 /* MapTrackingAnnotation.m */; };
+		CE5162EF17E754280024D13B /* users.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE5162EE17E754280024D13B /* users.txt */; };
 		CE567FC117C754DD00454FF5 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567FBF17C754DD00454FF5 /* 114.png */; };
 		CE567FC217C754DD00454FF5 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567FC017C754DD00454FF5 /* 120.png */; };
 		CE567FC417C7551300454FF5 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567FC317C7551300454FF5 /* 80.png */; };
@@ -137,7 +138,7 @@
 		CE3B984717BDF76100E6E1D1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CE464AA917C20BFC00466E55 /* MapTrackingAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTrackingAnnotation.h; sourceTree = "<group>"; };
 		CE464AAA17C20BFC00466E55 /* MapTrackingAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTrackingAnnotation.m; sourceTree = "<group>"; };
-		CE5162EA17E737440024D13B /* File.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = File.strings; sourceTree = "<group>"; };
+		CE5162EE17E754280024D13B /* users.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = users.txt; sourceTree = "<group>"; };
 		CE567F3817C6524B00454FF5 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		CE567F3917C6524B00454FF5 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
 		CE567F3A17C6524B00454FF5 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
@@ -177,7 +178,6 @@
 		CE567FC017C754DD00454FF5 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
 		CE567FC317C7551300454FF5 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
 		CE8FEE0E17BD119A00C8F296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		CE9766E117E305E400096E4B /* users */ = {isa = PBXFileReference; lastKnownFileType = text; path = users; sourceTree = "<group>"; };
 		CE9B190717C655FF001318C2 /* 10075043_znak_voprosa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10075043_znak_voprosa.gif; sourceTree = "<group>"; };
 		CE9B190817C655FF001318C2 /* map_pin_2-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pin_2-128.png"; sourceTree = "<group>"; };
 		CEA0BC6F17BE13540002F1CB /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
@@ -257,8 +257,7 @@
 		C5F7B87117B9E9B100FB6223 = {
 			isa = PBXGroup;
 			children = (
-				CE5162EA17E737440024D13B /* File.strings */,
-				CE9766E117E305E400096E4B /* users */,
+				CE5162EE17E754280024D13B /* users.txt */,
 				CE27191217E323450062F6A9 /* CheckUsers.h */,
 				CE27191317E323450062F6A9 /* CheckUsers.m */,
 				C5F7B88317B9E9B100FB6223 /* findMe */,
@@ -611,6 +610,7 @@
 				CE9B18F517C654FB001318C2 /* 8.png in Resources */,
 				CE9B18E817C654FB001318C2 /* 13.png in Resources */,
 				CE9B18E917C654FB001318C2 /* 14.png in Resources */,
+				CE5162EF17E754280024D13B /* users.txt in Resources */,
 				CE9B18FA17C65500001318C2 /* win_12.png in Resources */,
 				CEBFDE9617C618C500B4F970 /* NoLogo_2.png in Resources */,
 				CE9B18F817C65500001318C2 /* win_10.png in Resources */,

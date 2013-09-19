@@ -55,19 +55,32 @@
     
     }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    MapViewController *viewMap = [segue destinationViewController];
+    //MapViewController *viewMap = [segue destinationViewController];
+    
     
     
 }
 
 - (IBAction)enterButton:(id)sender {
-    /*BOOL *AuthenticationResult = [CheckUsers checkLogin: self.loginTextfield.text andPassword:
+    BOOL AuthenticationResult = [CheckUsers checkLogin: self.loginTextfield.text andPassword:
                                  self.passwordTextfield.text];
-    if ( *AuthenticationResult == YES ){
+     UIStoryboard *strb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    if ( AuthenticationResult == YES ){
         
+       
+        UIViewController *vc = [strb instantiateViewControllerWithIdentifier:@"NavigControl"];
+        
+        [self presentViewController:vc animated:YES completion:nil];
     }
     else{
         
-    }*/
+        
+        UIViewController *vc = [strb instantiateViewControllerWithIdentifier:@"errorCont"];
+        
+        [self presentViewController:vc animated:YES completion:nil];
+        
+        
+    }
 }
 @end
