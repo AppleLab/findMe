@@ -185,10 +185,10 @@
             </objects>
             <point key="canvasLocation" x="2857" y="-807"/>
         </scene>
-        <!--View Controller-->
+        <!--Registruser-->
         <scene sceneID="4YO-iM-bhm">
             <objects>
-                <viewController id="T3I-TS-Bha" sceneMemberID="viewController">
+                <viewController id="T3I-TS-Bha" customClass="Registruser" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wIx-Eg-0mi"/>
                         <viewControllerLayoutGuide type="bottom" id="7mC-cQ-44o"/>
@@ -268,7 +268,7 @@
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ud2-3l-WiJ" kind="modal" id="JL1-rV-glg"/>
+                                    <action selector="reg:" destination="T3I-TS-Bha" eventType="touchUpInside" id="MkZ-3E-Xbk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJA-oi-tJ4">
@@ -285,6 +285,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96078437569999997" green="0.91372555489999996" blue="0.85490202900000001" alpha="1" colorSpace="deviceRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmpassword" destination="w6H-3g-I3f" id="2Rk-Q1-uYw"/>
+                        <outlet property="email" destination="Oai-Oj-m1K" id="aPW-pe-yk8"/>
+                        <outlet property="login" destination="yfq-GB-PNA" id="SCm-KR-5rQ"/>
+                        <outlet property="password" destination="vIG-yj-tyG" id="9zw-5W-bUW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjI-g2-yh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -319,10 +325,10 @@
             </objects>
             <point key="canvasLocation" x="3094" y="206"/>
         </scene>
-        <!--View Controller-->
+        <!--Registrationerror-->
         <scene sceneID="taL-uT-ZYo">
             <objects>
-                <viewController id="ud2-3l-WiJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="errorRegist" id="ud2-3l-WiJ" customClass="Registrationerror" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="756-oH-QOV"/>
                         <viewControllerLayoutGuide type="bottom" id="p4Z-5B-MrT"/>
@@ -850,7 +856,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ZmA-XB-5Se"/>
         <segue reference="ruE-kW-SXG"/>
+        <segue reference="uLw-eq-TSO"/>
     </inferredMetricsTieBreakers>
 </document>

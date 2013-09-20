@@ -31,6 +31,9 @@
 		CE567FC117C754DD00454FF5 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567FBF17C754DD00454FF5 /* 114.png */; };
 		CE567FC217C754DD00454FF5 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567FC017C754DD00454FF5 /* 120.png */; };
 		CE567FC417C7551300454FF5 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567FC317C7551300454FF5 /* 80.png */; };
+		CE7AAA0717EB25B700F96CC0 /* Registruser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7AAA0617EB25B700F96CC0 /* Registruser.m */; };
+		CE7AAA1517EB314800F96CC0 /* Registr.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7AAA1417EB314800F96CC0 /* Registr.m */; };
+		CE7AAA1817EB38A200F96CC0 /* Registrationerror.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7AAA1717EB38A200F96CC0 /* Registrationerror.m */; };
 		CE8FEE0F17BD119A00C8F296 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8FEE0E17BD119A00C8F296 /* CoreLocation.framework */; };
 		CE9B18E417C654B4001318C2 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567F3817C6524B00454FF5 /* 1.png */; };
 		CE9B18E517C654FB001318C2 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = CE567F3917C6524B00454FF5 /* 10.png */; };
@@ -177,6 +180,12 @@
 		CE567FBF17C754DD00454FF5 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
 		CE567FC017C754DD00454FF5 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
 		CE567FC317C7551300454FF5 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
+		CE7AAA0517EB25B700F96CC0 /* Registruser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Registruser.h; sourceTree = "<group>"; };
+		CE7AAA0617EB25B700F96CC0 /* Registruser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Registruser.m; sourceTree = "<group>"; };
+		CE7AAA1117EB2EBE00F96CC0 /* Registr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Registr.h; sourceTree = "<group>"; };
+		CE7AAA1417EB314800F96CC0 /* Registr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Registr.m; sourceTree = "<group>"; };
+		CE7AAA1617EB38A200F96CC0 /* Registrationerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Registrationerror.h; sourceTree = "<group>"; };
+		CE7AAA1717EB38A200F96CC0 /* Registrationerror.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Registrationerror.m; sourceTree = "<group>"; };
 		CE8FEE0E17BD119A00C8F296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CE9B190717C655FF001318C2 /* 10075043_znak_voprosa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 10075043_znak_voprosa.gif; sourceTree = "<group>"; };
 		CE9B190817C655FF001318C2 /* map_pin_2-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pin_2-128.png"; sourceTree = "<group>"; };
@@ -355,6 +364,10 @@
 				C5F7B88F17B9E9B100FB6223 /* Main.storyboard */,
 				C5F7B89217B9E9B100FB6223 /* ViewController.h */,
 				C5F7B89317B9E9B100FB6223 /* ViewController.m */,
+				CE7AAA0517EB25B700F96CC0 /* Registruser.h */,
+				CE7AAA0617EB25B700F96CC0 /* Registruser.m */,
+				CE7AAA1417EB314800F96CC0 /* Registr.m */,
+				CE7AAA1117EB2EBE00F96CC0 /* Registr.h */,
 				CE239F8817BE437A00C5256A /* imiges */,
 				CE183A3417BD8208000B4D4B /* MapViewController.h */,
 				CE183A3517BD8208000B4D4B /* MapViewController.m */,
@@ -368,6 +381,8 @@
 				CEA2D3E417C61F4A00F43304 /* MiniatureViewController.m */,
 				CEBB4CDE17C73BC5000FEC4A /* AddDescriptionController.h */,
 				CEBB4CDF17C73BC5000FEC4A /* AddDescriptionController.m */,
+				CE7AAA1617EB38A200F96CC0 /* Registrationerror.h */,
+				CE7AAA1717EB38A200F96CC0 /* Registrationerror.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -655,10 +670,12 @@
 			files = (
 				CEF5FCD017BF69C200AD3643 /* APIDownload.m in Sources */,
 				CEBB4CE017C73BC5000FEC4A /* AddDescriptionController.m in Sources */,
+				CE7AAA0717EB25B700F96CC0 /* Registruser.m in Sources */,
 				CE464AAB17C20BFC00466E55 /* MapTrackingAnnotation.m in Sources */,
 				CEF5FCEB17BF69D400AD3643 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
 				CEF5FCE717BF69D400AD3643 /* CDataScanner.m in Sources */,
 				CEF5FCE817BF69D400AD3643 /* CDataScanner_Extensions.m in Sources */,
+				CE7AAA1517EB314800F96CC0 /* Registr.m in Sources */,
 				CEA2D3E517C61F4A00F43304 /* MiniatureViewController.m in Sources */,
 				CEF5FCEC17BF69D400AD3643 /* CJSONScanner.m in Sources */,
 				CEF5FCEE17BF69D400AD3643 /* CJSONSerializedData.m in Sources */,
@@ -674,6 +691,7 @@
 				C5F7B88A17B9E9B100FB6223 /* main.m in Sources */,
 				CEF5FCEF17BF69D400AD3643 /* CJSONSerializer.m in Sources */,
 				CEA0BC7117BE13540002F1CB /* SearchTableViewController.m in Sources */,
+				CE7AAA1817EB38A200F96CC0 /* Registrationerror.m in Sources */,
 				CE183A3617BD8208000B4D4B /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,29 +22,16 @@
         NSLog (@"Error reading file %@", stringFromFileAtPath);
     }
     else{
-        /*NSString *str = [NSString stringWithFormat:login, @"|", password, @"|"];
-        NSRange range = [stringFromFileAtPath rangeOfString:str];
-        if (range.length > 0){
-            AuthenticationResult = YES;
-        }*/
-        //NSString *str = [NSString stringWithFormat:login, @" ", password, @" "];
         NSArray *myWords = [stringFromFileAtPath componentsSeparatedByCharactersInSet:
                             [NSCharacterSet characterSetWithCharactersInString:@"|\n"]];
         int ind = 0;
         while (ind < [myWords count]){
-            NSLog(@"%d", ind);
-            NSLog(@"%@", login);
-            NSLog(@"%@", myWords);
             if([login  isEqual: myWords[ind]]){
-            //if (myWords[ind] == login){
                 NSLog(@"%d", 4);
                 if ([password isEqual: myWords[ind + 1] ]){
                    AuthenticationResult = YES;
                     break;
                 }
-            }
-            else{
-                NSLog(@"%d", 3);
             }
             ind = ind + 3;
             
